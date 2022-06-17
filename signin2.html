@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+<style>
+
+#searchBox {
+        font-family: LatoSemiBold;
+        width: 42%;
+        height: 50px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px;
+        margin: 18px;
+        background: white;
+        margin-left: -1%;
+    }
+
+    .val {
+        width: 50%;
+        height: 20px;
+    }
+
+    #sel {
+        width: 25%;
+        height: 35px;
+        vertical-align: middle;
+        margin: 8px;
+        border: none;
+        display: inline-block;
+        color: #24aeb1;
+        font-family: LatoSemiBold;
+
+    }
+
+    #mainbox {
+        width: 100%;
+        height: 95px;
+        background-color: #32aeb1;
+        font-family: LatoSemiBold;
+        position: fixed;
+        margin-left: -0.5%;
+        margin-top: -10px;
+
+    }
+
+    .mainImg {
+        width: 12%;
+        margin: 15px;
+        vertical-align: middle;
+        height: 50px;
+        background-color: #32aeb1;
+        display: inline-block;
+        font-family: LatoSemiBold;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+
+    #boxes {
+        width: 31%;
+        height: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-weight: 500;
+        margin-top: -25px;
+    }
+
+    .b1 {
+        width: 25%;
+        height: 9px;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        font-weight: 500
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .icon {
+        margin: -5px;
+    }
+
+    #numprod {
+        display: block;
+        background: #ee4380 !important;
+        color: #fff !important;
+        border-radius: 6.5px;
+        padding: 0px;
+        margin-bottom: -1%;
+        width: 12%;
+        text-align: center;
+        line-height: 14px;
+        font-family: LatoBold;
+        font-size: 10px;
+        margin-left: 10%;
+    }
+
+    .b1 a {
+        text-decoration: none;
+        color: white
+    }
+
+    #searchbar {
+        width: 70%;
+        height: 40px;
+        border: transparent;
+    }
+    /* MY CODE */
+    body{
+        background-color: #f6f6f7;
+    }
+
+    #navbar{
+        width: 100%;
+        height: 80px;
+        border: 1px solid red;
+    }
+
+    #container{
+        width: 70%;
+        /* height: 500px; */
+        /* border: 1px solid red; */
+        background-color: white;
+        margin: 40px auto auto auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 23px;
+        border-radius: 13px;
+
+    }
+
+    #container > div{
+        /* border: 1px solid teal; */
+        /* margin-top: 30px; */
+    }
+
+    img{
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+
+    input{
+        /* display: block; */
+        margin-bottom: 25px;
+        width: 80%;
+        height: 25px;
+        border: none;
+        outline: none;
+        /* border-bottom: 2px solid rgba(21,27,57,.04); */
+    }
+
+    h2+p{
+        margin-top: -10px;
+        margin-bottom: 50px;
+        color: rgba(21,27,57,.6);
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    p+div{
+        /* border: 1px solid red; */
+        height: 30px;
+        border-bottom: 2px solid rgba(21,27,57,.04);
+        margin-bottom: 25px;
+    }
+
+    p+div>span{
+        font-size: 14px;
+        border-right: 1px solid #151b39;
+        padding: 0px 5px 0px 0px;
+        margin: 3px 0px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+    }
+
+    p+p{
+        font-size: 9.5px;
+        color: #24aeb1;
+        margin-bottom: -1px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 300px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #container > div+div{
+        padding: 0px 60px;
+    }
+
+    div+button{
+        background-color: #24aeb1;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 37px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    input::placeholder{
+        font-family: 'Lato', sans-serif;
+        color: rgba(21, 27, 57, 0.26);
+    }
+
+    button+div{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .social{
+        width: 40%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+
+    .social>img{
+        cursor: pointer;
+    }
+
+    .otpCode{
+        background-color: #f7f7f7;
+        width: 50%;
+        height: 90%;
+        font-size: large;
+        margin-left: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h4{
+        font-size: 12px;
+        color: rgba(21,27,57,.6);
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+    }
+
+    #otpTxt{
+        font-size: 13px;
+        color: rgba(21,27,57,.6);
+        margin-top: -5px;
+    }
+
+    #otp{
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,40px);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    #otp>div{
+        border: 1px solid gray;
+        background-color: #f7f7f7;
+        cursor: text;
+    }
+
+
+</style>
+<body>
+
+    <div id="mainbox">
+        
+        <div class="mainImg">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+
+
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+
+            </div>
+
+            <div class="b1">
+                <span id="numprod">2</span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="l"> Cart
+
+            </div>
+
+
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href=""> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- MY CODE  -->
+    <div id="navbar"></div>
+    <div id="container">
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="">
+        </div>
+        <div>
+            <h2>Sign In</h2>
+            <p>Sign up or Sign in to access your orders, special offers, health tips and more!</p>
+            <p>PHONE NUMBER</p>
+            <div>
+                <span>+91</span>
+                <input type="number" placeholder="Enter your mobile no">
+            </div>
+            <h4>VERIFYING NUMBER</h4>
+            <span id="otpTxt">We have sent 6 digit OTP</span>
+            <div id="otp">
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+                <div>
+                    <input type="text" class="otpCode" value="">
+                </div>
+            </div>
+            
+            <button>VERIFY</button>
+            <div>
+                <div class="social">
+                    <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                        <img src="data:image/png;base64,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" alt="">
+                    </a>
+                    
+                    <!-- <p>Google</p> -->
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiEusmFnmQqHK8sL5eAlk5dEkmqc8Mr8JPg&usqp=CAU" alt="">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("button").addEventListener("click", function(){
+        alert("Sign In Successful!");
+        // REDIRECT
+    })
+</script>
+</html>

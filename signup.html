@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+#searchBox {
+        font-family: LatoSemiBold;
+        width: 42%;
+        height: 50px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px;
+        margin: 18px;
+        background: white;
+        margin-left: -1%;
+    }
+
+    .val {
+        width: 50%;
+        height: 20px;
+    }
+
+    #sel {
+        width: 25%;
+        height: 35px;
+        vertical-align: middle;
+        margin: 8px;
+        border: none;
+        display: inline-block;
+        color: #24aeb1;
+        font-family: LatoSemiBold;
+
+    }
+
+    #mainbox {
+        width: 100%;
+        height: 95px;
+        background-color: #32aeb1;
+        font-family: LatoSemiBold;
+        position: fixed;
+        margin-left: -0.5%;
+        margin-top: -10px;
+
+    }
+
+    .mainImg {
+        width: 12%;
+        margin: 15px;
+        vertical-align: middle;
+        height: 50px;
+        background-color: #32aeb1;
+        display: inline-block;
+        font-family: LatoSemiBold;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+
+    #boxes {
+        width: 31%;
+        height: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-weight: 500;
+        margin-top: -25px;
+    }
+
+    .b1 {
+        width: 25%;
+        height: 9px;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        font-weight: 500
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .icon {
+        margin: -5px;
+    }
+
+    #numprod {
+        display: block;
+        background: #ee4380 !important;
+        color: #fff !important;
+        border-radius: 6.5px;
+        padding: 0px;
+        margin-bottom: -1%;
+        width: 12%;
+        text-align: center;
+        line-height: 14px;
+        font-family: LatoBold;
+        font-size: 10px;
+        margin-left: 10%;
+    }
+
+    .b1 a {
+        text-decoration: none;
+        color: white
+    }
+
+    #searchbar {
+        width: 70%;
+        height: 40px;
+        border: transparent;
+    }
+    /* MY CODE */
+     body{
+        background-color: #f6f6f7;
+    }
+
+    #navbar{
+        width: 100%;
+        height: 80px;
+        border: 1px solid red;
+    }
+
+    #container{
+        width: 70%;
+        /* height: 500px; */
+        /* border: 1px solid red; */
+        background-color: white;
+        margin: 40px auto auto auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 23px;
+        border-radius: 13px;
+
+    }
+
+    #container > div{
+        /* border: 1px solid teal; */
+        /* margin-top: 30px; */
+    }
+
+    p{
+        font-size: 9.5px;
+        color: #24aeb1;
+        margin-bottom: -1px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+    }
+
+    img{
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+
+    input{
+        /* display: block; */
+        margin-bottom: 25px;
+        width: 80%;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-family: 'Lato', sans-serif;
+        /* border-bottom: 2px solid rgba(21,27,57,.04); */
+    }
+
+    p+div{
+        /* border: 1px solid red; */
+        height: 30px;
+        border-bottom: 2px solid rgba(21,27,57,.04);
+        margin-bottom: 25px;
+    }
+
+    #container > div+div{
+        padding: 0px 60px;
+    }
+
+    input::placeholder{
+        font-family: 'Lato', sans-serif;
+        color: rgba(21, 27, 57, 0.26);
+    }
+
+    h4{
+        font-size: 12px;
+        color: rgba(21,27,57,.6);
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+    }
+
+    #otpTxt{
+        font-size: 13px;
+        color: rgba(21,27,57,.6);
+        margin-top: -5px;
+    }
+
+    #otpTxt+span{
+        font-weight: bold;
+        font-size: 16px;
+        color: #151b39
+    }
+
+    #otp{
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,40px);
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    #otp>div{
+        border: 1px solid gray;
+        background-color: #f7f7f7;
+        cursor: text;
+    }
+
+    button{
+        background-color: #24aeb1;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 37px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    h2{
+        font-family: 'Lato', sans-serif;
+    }
+
+    .otpCode{
+        background-color: #f7f7f7;
+        width: 50%;
+        height: 90%;
+        font-size: large;
+        margin-left: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+<body>
+
+    <div id="mainbox">
+        
+        <div class="mainImg">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+
+
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+
+            </div>
+
+            <div class="b1">
+                <span id="numprod">2</span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="l"> Cart
+
+            </div>
+
+
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href=""> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- MY CODE -->
+    <div id="navbar"></div>
+    <div id="container">
+        <div>
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="">
+        </div>
+        <div>
+            <h2>Create Account</h2>
+            <p>EMAIL ID</p>
+            <div>
+                <input type="email" id="email" placeholder="Enter your Email Id">
+            </div>
+            <p>FIRST NAME</p>
+            <div>
+                <input type="text" id="firstName" placeholder="Your First Name">
+            </div>
+            <p>LAST NAME</p>
+            <div>
+                <input type="text" id="lastName" placeholder="Your Last Name">
+            </div>
+            <h4>VERIFYING NUMBER</h4>
+            <span id="otpTxt">We have sent 6 digit OTP on</span>
+            <span>+91-9966887722</span>
+            <div id="otp">
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+                <div>
+                    <input type="text" class="otpCode">
+                </div>
+            </div>
+            <button>VERIFY</button>
+
+</body>
+
+<script>
+    let mailData=JSON.parse(localStorage.getItem("mail-data")) || [];
+    let nameData=JSON.parse(localStorage.getItem("name-data")) || [];
+    document.querySelector("button").addEventListener("click",function(){
+        let email= document.getElementById("email").value;
+        let firstName= document.getElementById("firstName").value;
+        let lastName= document.getElementById("lastName").value;
+        if(firstName==[]){
+            alert("Please enter your first name");
+        } else if(lastName==[]){
+            alert("Please enter your last name")
+        }
+        // localStorage.setItem("name-data",JSON.stringify(nameData))
+       
+        if(email.length>1){
+            if(mailData.includes(email)==true){
+            alert("This email already exists")
+        }
+         else {
+            mailData.push(email);
+            localStorage.setItem("mail-data",JSON.stringify(mailData));
+            alert("Sign Up successful")
+            // REDIRECT TO HOMEPAGE
+        }
+        if(mailData==""){
+            alert("Please enter your email id");
+        }
+
+        } else{
+            alert("Enter a valid email address");
+        }
+        
+    })
+</script>
+</html>
