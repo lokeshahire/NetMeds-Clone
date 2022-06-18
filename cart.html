@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+    <title>Netmed.com: India Online Pharmacy</title>
+    <style>
+        * {
+
+            border-radius: 5px;
+        }
+
+        #products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+            gap: 15px;
+            justify-content: center;
+            padding-left: 20px;
+
+
+
+        }
+
+        #products>div>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #products>div {
+            margin-top: 2px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 3px;
+            width: 95%;
+            height: auto;
+
+
+        }
+
+        #products>div>p {
+
+            font-size: 15px;
+
+        }
+
+
+
+        #container {
+            display: flex;
+
+
+            width: 100%;
+            height: 100px;
+
+        }
+
+        #navbar {
+
+            width: 100%;
+            height: 1000px;
+
+        }
+
+        #order {
+
+            width: 70%;
+            text-align: center;
+
+        }
+
+        #navbar>div {
+
+            display: flex;
+            height: 1000px;
+            width: 490px;
+            display: inline-block;
+
+
+
+        }
+
+        #navbar>#main {
+            width: 50%;
+            justify-content: center;
+        }
+
+        #navbar>#first {
+            width: 20%;
+            justify-content: left;
+        }
+
+        #navbar>#third {
+            width: 28%;
+            justify-content: right;
+
+        }
+
+        #navbar>#main>#slide {
+            width: 80%;
+            height: 100px;
+
+        }
+
+        #navbar>#main>#slide>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #searchBox {
+            font-family: LatoSemiBold;
+            width: 42%;
+            height: 45px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1px;
+            margin: 18px;
+            background: white;
+            margin-left: -20px;
+        }
+
+        .val {
+            width: 60px;
+            height: 20px;
+        }
+
+        #sel {
+            width: 25%;
+            height: 30px;
+            vertical-align: middle;
+            margin: 8px;
+            border: none;
+            display: inline-block;
+            color: #24aeb1;
+            font-family: LatoSemiBold;
+        }
+
+        #mainbox {
+            width: 100%;
+            height: 100px;
+            background-color: #32aeb1;
+            font-family: LatoSemiBold;
+            position: fixed;
+            margin-left: -10px;
+            margin-top: -10px;
+            z-index: 1;
+        }
+
+        .mainImg {
+            width: 200px;
+            margin: 15px;
+            vertical-align: middle;
+            height: 50px;
+            background-color: #32aeb1;
+            display: inline-block;
+            font-family: LatoSemiBold;
+            margin-left: 170px;
+            margin-top: 30px;
+        }
+
+        #boxes {
+            width: 400px;
+            height: 23px;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            font-weight: 500;
+            margin-top: -25px;
+        }
+
+        .b1 {
+            width: 120px;
+            height: 9px;
+            display: inline-block;
+            padding: 5px;
+            color: white;
+            font-weight: 500
+        }
+
+        .vl {
+            height: 149px;
+            display: inline-block;
+            margin: -13px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .icon {
+            margin: -5px;
+        }
+
+        #numprod {
+            display: block;
+            background: #ee4380 !important;
+            color: #fff !important;
+            border-radius: 6.5px;
+            padding: 0px;
+            margin-bottom: -7px;
+            width: 17px;
+            text-align: center;
+            line-height: 14px;
+            font-family: LatoBold;
+            font-size: 10px;
+            margin-left: 11px;
+        }
+
+        .b1 a {
+            text-decoration: none;
+            color: white
+        }
+
+        #searchbar {
+            width: 70%;
+            height: 90%;
+            border: transparent;
+        }
+
+        #cart_body {
+            width: 70%;
+            justify-content: center;
+            margin: auto;
+
+            text-align: center;
+        }
+
+        #order_summary {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
+
+            gap: 25px;
+            align-content: center;
+            padding: 5px;
+        }
+
+        #order_summary>div {
+            width: 100%;
+
+            align-items: center;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #payment_offers,
+        #membership {
+            height: 100px;
+        }
+
+        #payment_offers>img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        #products,
+        #payment {
+            height: 500px;
+
+            width: 100%;
+
+        }
+
+        #payment {
+            display: grid;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            grid-template-rows: 1fr 2fr;
+            gap: 5px;
+            padding: 15px;
+        }
+
+        #payment>div {
+
+            margin: auto;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #payment_details {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 40px);
+            gap: 5px;
+            /* border: 1px solid red; */
+            justify-content: center;
+            width: 70%;
+
+        }
+
+        #payment_details>div {
+            /* border: 1px solid red; */
+            text-align: left;
+
+        }
+
+        #coupon {
+
+            justify-content: center;
+        }
+
+        #apply {
+            margin-top: 2px;
+        }
+
+        #coupon_button:active {
+            background-color: chartreuse;
+            color: black;
+        }
+
+        #coupon_button {
+            background-color: teal;
+            border: transparent;
+            width: 100px;
+            height: 30px;
+            color: white;
+
+        }
+
+        #membership {
+
+            width: 100%;
+            margin: 0 0 16px;
+            background: #f85caa;
+            color: white;
+
+        }
+
+        #PRO {
+            background-color: teal;
+            color: white;
+            height: 100%;
+            border: transparent;
+
+
+        }
+
+        #PRO:active {
+            background-color: greenyellow;
+            color: black;
+        }
+
+        #pro {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            margin: auto;
+        }
+
+        #or {
+            color: black;
+            text-align: left;
+        }
+
+        #left {
+            text-align: left;
+        }
+
+        #right {
+            text-align: right;
+            color: #24aeb1;
+        }
+
+        .carousel-cell {
+            width: auto;
+        }
+
+        .carousel-cell:before {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="mainbox">
+            <a href="homepage.html">
+                <div class="mainImg">
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+                </div>
+            </a>
+            <div id="searchBox">
+                <select id="sel">
+                    <option value=""> Deliver to <span class="blue">1011100</span>
+                    </option>
+                    <option class="val" value="Other"> Other
+                    </option>
+                </select>
+                <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product." />
+            </div>
+            <div id="boxes">
+                <div class="b1"> <a href=""> <img class="icon"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+                </div>
+                <div class="b1">
+                    <span id="numprod"></span>
+                    <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                    <a href="cart.html"> Cart
+                </div>
+                <div class="b1">
+                    <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                    <a href="signin.html"> SignIn/SignUp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="cart_body">
+        <h2 id="or">Order Summary</h2>
+        <div id="order_summary">
+
+
+            <div id="payment_offers">
+                <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 2000 , "imagesLoaded":true }'>
+
+                    <img style="height: 120px; width: 100%;"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654098465_Home_banner2555.jpg"
+                        title="Get Flat 4000 Paytm Cashback points on Netmeds"
+                        alt="Get Flat 4000 Paytm Cashback points on Netmeds">
+
+                    <div class="carousel-cell">
+                        <img style="margin-left: 0px;height: 120px; width: 100%;"
+                            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654275901_Web_Home_Kareenasdhdh.jpg">
+
+                    </div>
+                    <div class="carousel-cell">
+                        <img style="height: 120px; width: 100%;"
+                            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654017250_Home_bannergdfshd.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img style=" height: 120px; width: 100%;"
+                            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654098984_Home_banner23566.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img style=" height: 120px; width: 100%;"
+                            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1631889258_Web_Home_Bannerfdgdg.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div id="membership">
+                <h4>Become Netmeds First Member</h4>
+                <p>Join membership to save much more! Exclusive offers designed for you</p>
+
+            </div>
+            <div>
+                <div id="pro">
+                    <div id="left">
+                        <h2>PRODUCTS</h2>
+                    </div>
+                    <div id="right">
+                        <a href="product.html">
+                            <h2 style="color: black;">
+                                Add More Items</h2>
+                        </a>
+
+                    </div>
+                </div>
+                <div id="products">
+
+                </div>
+
+            </div>
+            <div id="payment">
+                <div id="coupon">
+                    <h3>APPLY PROMO CODE</h3>
+                    <input type="text" name="COUPON CODE" id="apply">
+                    <button id="coupon_button">Apply</button>
+                    <p>Get flat discount! Vouchers applicable in payment options.</p>
+
+                </div>
+                <div id="payment_details">
+
+                    <h2>Payment Details</h2>
+
+                    <div>
+
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <h4>MRP Total</h4>
+                    </div>
+                    <div>
+                        <h4 id="pt"></h4>
+                    </div>
+                    <div>
+                        <h4>Netmeds Discount</h4>
+                    </div>
+                    <div>
+                        <h4 id="net"></h4>
+                    </div>
+                    <div>
+                        <h2>Total Amount *</h2>
+                    </div>
+                    <div>
+                        <h3 id="total"></h3>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <h8>Total Amount</h8><br>
+                        <h4 id="total1"></h4>
+                    </div>
+                    <a href="orderrev.html"><button id="PRO">PROCEED</button></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let productCont = document.getElementById("products");
+    let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+    let orderLS = JSON.parse(localStorage.getItem("order-page")) || [];
+    let totalprice = 0;
+
+    function displayProducts(productData) {
+        productCont.innerHTML = "";
+        totalprice = 0;
+        productData.forEach(function (element) {
+            totalprice += Number(element.price.trim().split(" ")[3]);
+            let product = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = element.image_url;
+
+            let name = document.createElement("h3");
+            name.textContent = element.name;
+
+            let category = document.createElement("p");
+            category.innerText = element.category;
+
+            let price = document.createElement("p");
+            let rs = element.price
+            price.innerText = rs;
+            price.style.color = "red"
+
+            let mrp = document.createElement("p");
+            mrp.innerText = element.strikedoffprice;
+
+            let DeleteToCart = document.createElement("button");
+            DeleteToCart.innerText = "DELETE";
+            DeleteToCart.style.backgroundColor = "teal";
+            DeleteToCart.style.border = "transparent";
+            DeleteToCart.style.width = "100px";
+            DeleteToCart.style.height = "50px";
+            DeleteToCart.style.color = "white";
+            DeleteToCart.addEventListener("click", function () {
+                Delete(element.name);
+            })
+
+            product.append(img, name, category, price, mrp, DeleteToCart)
+            productCont.append(product);
+        })
+        document.querySelector("#pt").innerText = totalprice.toFixed(2);
+        document.querySelector("#net").innerText = "Please apply coupon if any";
+        document.querySelector("#total").innerText = ("Rs. " + totalprice.toFixed(2));
+        document.querySelector("#total1").innerText = ("Rs. " + totalprice.toFixed(2));
+        let x = totalprice.toFixed(2);
+        coupon_button.addEventListener("click", function () {
+            let coupon = document.querySelector("#apply").value;
+            if (coupon == "masai30" || coupon == "MASAI30") {
+                console.log(totalprice - (0.3 * totalprice));
+                document.querySelector("#net").innerText = "30%";
+                document.querySelector("#total").innerText = ("Rs. " + (totalprice - (0.3 * totalprice)).toFixed(2));
+                document.querySelector("#total1").innerText = ("Rs." + (totalprice - (0.3 * totalprice)).toFixed(2));
+                x = totalprice.toFixed(2) - (0.3 * totalprice.toFixed(2));
+            } else if (coupon !== "masai30" || coupon !== "MASAI30") {
+                alert("Please enter valid Coupon Code.")
+            } else {
+                document.querySelector("#total").innerText = (totalprice.toFixed(2));
+                document.querySelector("#total1").innerText = ("Rs. " + totalprice.toFixed(2));
+                x = totalprice.toFixed(2) - (0.3 * totalprice.toFixed(2));
+            }
+        })
+        PRO.addEventListener("click", function () {
+
+            localStorage.setItem("order-page", JSON.stringify(x));
+            orderLS.push(x);
+        })
+
+    }
+
+
+    displayProducts(cartLS);
+    function Delete(id) {
+        let deleted = cartLS.filter(function (el) {
+            return el.name != id;
+        })
+        cartLS = deleted;
+        localStorage.setItem("cart-page", JSON.stringify(cartLS));
+        displayProducts(cartLS);
+        console.log(cartLS);
+        location.reload()
+    }
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
+
+
+
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
+
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
+
+    txt.appendChild(spantext)
+</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

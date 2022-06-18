@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+<link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+<title>Netmed.com: India Online Pharmacy</title>
+</head>
+<style>
+    #searchBox {
+        font-family: LatoSemiBold;
+        width: 42%;
+        height: 50px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px;
+        margin: 18px;
+        background: white;
+        margin-left: -1%;
+    }
+
+    .val {
+        width: 50%;
+        height: 20px;
+    }
+
+    #sel {
+        width: 25%;
+        height: 35px;
+        vertical-align: middle;
+        margin: 8px;
+        border: none;
+        display: inline-block;
+        color: #24aeb1;
+        font-family: LatoSemiBold;
+
+    }
+
+    #mainbox {
+        width: 100%;
+        height: 100px;
+        background-color: #32aeb1;
+        font-family: LatoSemiBold;
+        position: fixed;
+        margin-top: -100px;
+        margin-left: -1%
+    }
+
+    .mainImg {
+        width: 12%;
+        margin: 15px;
+        vertical-align: middle;
+        height: 50px;
+        background-color: #32aeb1;
+        display: inline-block;
+        font-family: LatoSemiBold;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: #32aeb1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+
+    #boxes {
+        width: 31%;
+        height: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-weight: 500;
+        margin-top: -25px;
+    }
+
+
+    .b1 {
+        width: 25%;
+        height: 9px;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        font-weight: 500
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .icon {
+        margin: -5px;
+    }
+
+    #numprod {
+        display: block;
+        background: #ee4380 !important;
+        color: #fff !important;
+        border-radius: 6.5px;
+        padding: 0px;
+        margin-bottom: -1%;
+        width: 12%;
+        text-align: center;
+        line-height: 14px;
+        font-family: LatoBold;
+        font-size: 10px;
+        margin-left: 10%;
+    }
+
+    .b1 a {
+        text-decoration: none;
+        color: white
+    }
+
+    #searchbar {
+        width: 70%;
+        height: 40px;
+        border: transparent;
+    }
+
+    #secondbigbox {
+        background: #32aeb1;
+        width: auto;
+        margin-left: -1%;
+    }
+
+    .row {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px
+    }
+
+    .row>div {
+        height: 50px;
+        flex-basis: 180px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #rimg {
+        padding: 6px;
+        display: inline-block;
+    }
+
+    ul.nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 36px;
+        line-height: 26px;
+        font-size: 13px;
+        color: black;
+    }
+
+    ul.nav li {
+        float: left;
+    }
+
+    ul.nav a {
+        display: block;
+        padding: 0px 28px;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 7px;
+    }
+
+    .nbox {
+        width: 80%;
+        height: 56px;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.navbar {
+        margin: auto;
+        margin-left: 130px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    ul.navbar li {
+        float: left;
+    }
+
+    .la {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(11, 18, 25, .75);
+        margin-bottom: -27px;
+        list-style: none;
+        padding: 11px;
+        margin-right: 8px;
+        margin-top: -3px;
+    }
+
+    .nav {
+        width: 70%;
+        height: 100px;
+        border: 1px solid yellow;
+
+    }
+
+    .dbox {
+        width: 96px;
+        height: 41px;
+        display: inline-block;
+        vertical-align: bottom;
+        font-family: LatoSemiBold;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .med {
+        font-family: LatoSemiBold;
+        font-size: 16px;
+        color: white;
+    }
+
+    .pmed {
+        vertical-align: bottom;
+        display: inline-block;
+        color: white;
+        font-family: LatoSemiBold;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 220px;
+        font-size: 12px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* footer */
+    .footer-logo {
+        padding: 19px;
+        display: inline-block;
+    }
+
+    .footer-txt {
+        display: inline-block;
+        padding: 5px;
+        width: 60%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgba(11, 18, 25, .5);
+        align-items: center;
+        height: 80px;
+        border-bottom: 1px solid rgb(191, 187, 187);
+    }
+
+    .footer-top {
+        width: 300px;
+        height: 110px;
+        display: inline-block;
+        margin-left: 150px;
+        border-bottom: 1px solid rgb(191, 187, 187);
+
+    }
+
+    .company {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .list {
+
+        width: 200px;
+        height: 550px;
+        margin-left: 180px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-top: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+
+    .head2 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+        text-transform: uppercase;
+        margin-left: -2px;
+    }
+
+    ul li a {
+        line-height: 32px;
+        font-size: 14px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .listt {
+        width: 270px;
+        height: 550px;
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: bottom;
+        max-height: 541px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .subscribe h1 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 11px;
+        /* text-transform: uppercase; */
+        margin: 2px;
+    }
+
+    .inp {
+        width: 194px;
+        height: 40px;
+        border-radius: 4px;
+        border: 0;
+        padding: 0 12px;
+    }
+
+    input {
+        overflow: visible;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .subtext {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .foot {
+        width: 100px;
+        vertical-align: middle;
+        border-style: none;
+        max-width: 100%;
+        margin: 9px;
+    }
+
+    .fonttext {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+        color: rgba(11, 18, 25, .75);
+        margin-left: 24px;
+    }
+
+    p.pp {
+        margin: 2px;
+        padding: 20px;
+        line-height: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+        color: rgba(11, 18, 25, .75);
+    }
+
+    .explore {
+        display: block;
+        padding: 12px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 32px;
+        width: 140px;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #24aeb1;
+        border-radius: 4px;
+        box-shadow: 0 6px 12px 0 rgb(36 174 177 / 40%);
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 32px;
+        text-decoration: none;
+        margin: 23px;
+    }
+
+    .flimg {
+        width: 50%;
+        /* vertical-align: middle; */
+        padding: 31px;
+    }
+
+    .copyright {
+        background: #fff;
+        color: rgba(11, 18, 25, .5);
+        display: inline-block;
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+        height: 65px;
+        padding: 0 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+    .copyblock a {
+        color: rgba(11, 18, 25, .5);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .copyblock {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid #d3d5d7;
+        padding-top: 20px;
+    }
+</style>
+
+
+<body>
+    <!-- navbar start -->
+    <div id="mainbox">
+
+        <div class="mainImg">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+
+
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+
+            </div>
+
+            <div class="b1">
+                <span id="numprod">2</span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="l"> Cart
+
+            </div>
+
+
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href=""> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="secondbigbox">
+        <div class="row">
+
+            <div>
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Medicines</div>
+                        <div class="dropdown-content">
+                            <a href="#">All Medicines</a>
+                            <a href="#">Previously ordered products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
+                <p class="pmed">Wellness</p>
+            </div>
+
+            <div>
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
+                <a href="labtest.html">
+                    <p class="pmed">Lab Tests</p>
+                </a>
+            </div>
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Beauty</div>
+                        <div class="dropdown-content">
+                            <a href="bodycare.html">Body Care</a>
+                            <a href="#">Face Care</a>
+                            <a href="#">Fragrance</a>
+                            <a href="#">Hands and Feet</a>
+                            <a href="#">Home Care</a>
+                            <a href="#">Senior Care</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/health-library.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Health Corner</div>
+                        <div class="dropdown-content">
+                            <a href="#">Health Library</a>
+                            <a href="#">PatientsAlike</a>
+                            <a href="#">Corona Awarness</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="nbox">
+        <ul class="navbar">
+            <li class="la"><a href="#">COVID Essentials</a></li>
+            <li class="la"><a href="#">Diabetes</a></li>
+            <li class="la"> <a href="#">Eyewear</a></li>
+            <li class="la"><a href="#">Ayush</a></li>
+            <li class="la"><a href="#">Fitness</a></li>
+            <li class="la"><a href="#">Mom &amp; Baby</a></li>
+            <li class="la"><a href="#">Devices</a></li>
+            <li class="la"><a href="#">Surgicals</a></li>
+            <li class="la"><a href="#">Sexual Wellness</a></li>
+            <li class="la"><a href="#">Treatments</a></li>
+        </ul>
+
+    </div>
+
+    <!-- navbar End -->
+
+
+
+
+    <!-- footer -->
+    <div class="footer-top">
+        <div class="footer-logo">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg">
+        </div>
+    </div>
+
+    <div class="footer-txt"> Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha &amp; Company – one of
+        India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines. </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="list">
+        <ul type="none">
+            <h1 class="head2">Company</h1>
+            <li><a href="https://www.netmeds.com/about-us">About Netmeds</a></li>
+            <li><a href="https://www.netmeds.com/testimonial">Customers Speak</a></li>
+            <li><a href="https://www.netmeds.com/news">In the News</a></li>
+            <li id="netmeds_career"><a href="https://netmeds.darwinbox.in/ms/candidate/careers">Career</a></li>
+            <li><a href="https://www.netmeds.com/terms-and-conditions">Terms and Conditions</a></li>
+            <li><a href="https://www.netmeds.com/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://www.netmeds.com/fees-and-payments-policy">Fees and Payments Policy</a></li>
+            <li><a href="https://www.netmeds.com/shipping-and-delivery-policy">Shipping and Delivery Policy</a></li>
+            <li><a href="https://www.netmeds.com/return-refund-and-cancellation-policy">Return, Refund and Cancellation
+                    Policy</a></li>
+            <li><a class="contact-link" href="https://www.netmeds.com/contact-us">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="list">
+        <ul type="none">
+            <h1 class="head2">Shopping</h1>
+
+            <li><a href="https://www.netmeds.com/prescriptions">Browse by A-Z</a></li>
+            <li><a href="https://www.netmeds.com/medicine/manufacturers">Browse by Manufacturers</a></li>
+            <li><a href="https://www.netmeds.com/health-library">Health Articles</a></li>
+            <li class="sbilabhide"><a href="https://www.netmeds.com/offers">Offers / Coupons</a></li>
+            <li><a href="https://www.netmeds.com/faqs">FAQs</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="list">
+        <ul type="none">
+
+            <h1 class="head2">Social</h1>
+            <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
+            <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
+            <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
+            <li><a href="https://in.linkedin.com/company/netmeds-marketplace-limited">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">Youtube</a></li>
+            <li><a href="https://www.netmeds.com/refer-earn">Refer &amp; Earn</a></li>
+        </ul>
+    </div>
+
+    <div class="listt">
+        <div class="subscribe">
+            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <p class="subtext">Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+            </p>
+        </div>
+        <input class="inp" name="newsletter_email" type="email" maxlength="50"
+            class="Required-newsletter-email validate-newsletter-emailid" id="newsletter_email"
+            placeholder="Enter your email address">
+
+        <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en"
+            target="_blank"><img style="height:35px ; width:120px" class="foot"
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png"></a>
+
+        <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="_blank"><img
+                style="height:35px ; width:105px;" class="foot"
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png"></a>
+
+    </div>
+
+
+    <small class="copyright">
+        <div class="copyblock">
+            <div class="footer_link">
+                <a href="">Medicine</a>
+            </div>
+            <div class="footer_link">
+                <a href="">Wellness</a>
+            </div>
+            <div class="footer_link sbilabhide">
+                <a href="">Lab Tests</a>
+            </div>
+            <div class="footer_link"><a href="">Beauty</a></div>
+            <div class="copy-txt">Copyright© 2021. All Rights Reserved.
+
+            </div>
+        </div>
+    </small>
+
+
+</body>
+
+
+</html>
