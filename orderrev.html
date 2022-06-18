@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+  
     <title>Document</title>
     <style>
 
@@ -61,34 +61,63 @@ color: white;
     margin: auto;
     justify-content: space-evenly;
     height: auto;
-  margin-top: 0px;
+  margin-top: -20px;
 }
 #left{
 /* border: 1px solid red; */
     width: 70%;
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#left>div:nth-child(1){
+#left>div{
 /* border: 1px solid red; */
-  height: 200px;
+  height: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px;
 }
-#left>div:nth-child(2){
+#product{
+  display: flex;
+  flex-direction: column;
+ 
+}
+#product>div{
+  /* border: 1px solid red; */
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+#product>div>img{
+  /* border: 1px solid red; */
+  width: 70px;
+  height: 70px;
+}
+#product>div>h3{
+  /* border: 1px solid red; */
+  width: 50%;
+}
+#product>div>p{
+  /* border: 1px solid red; */
+  width:20%;
+font-size: 23px;
+}
+#product>div>h4{
+  /* border: 1px solid red; */
+  width:20%;
+color: red;
+
+}
+
+
+#customer{
 /* border: 1px solid red; */
 border-radius: 5px;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 200px;
 }
-#left>div:nth-child(3){
-/* border: 1px solid red; */
-border-radius: 5px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 200px;
-}
+
 #right{
 /* border: 1px solid red; */
     width: 25%;
@@ -96,13 +125,8 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     flex-direction: column;
   justify-content: space-evenly;
 }
-#right>div:nth-child(1){
-/* border: 1px solid red; */
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-#right>div:nth-child(2){
+
+#bottom{
 /* border: 1px solid red; */
     margin-top: 10px;
   height: 300px;
@@ -113,6 +137,9 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: auto;
     display: flex;
   justify-content: space-evenly;
+  border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 200px;
 }
 #address>div:nth-child(1){
 /* border: 1px solid red; */
@@ -126,13 +153,42 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 200px;
     margin-right: 10px;
 }
+#payment{
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+}
+#upper{
+/* border: 1px solid red; */
+height: 27%;
+display: flex;
+}
+#upper>div{
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
 
+width: 50%;
+}
+#lower{
+  /* border: 1px solid red; */
+  height: 27%;
+  display: flex;
+}
+#lower>div{
+  /* border: 1px solid red; */
+  width: 50%;
+  
+}
     </style>
 </head>
 <body>
     <div id="head">
         <div>
             <img src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg" alt="error">
+            
         </div>
     </div>
     
@@ -151,8 +207,8 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
     <div id="main">
         <div id="left">
-        <div>
-
+        <div id="product">
+          <!-- //apppendng -->
         </div>
         <div id="address">
             <div>
@@ -171,16 +227,29 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             <div>
              <h3 style="color:red;  text-align:right;">CHANGE</h3>
             </div>
-        </div>
-        <div>
+         </div>
+        <div id="customer">
             <h3 style="color:grey;margin-left:30px">CUSTOMER NOTES</h3>
+            <div style="height:100px;width:80%;margin:auto;margin-bottom: 30px;"><input type="text" style="height:100px;width:100%;border:1px solid black;margin:auto;margin-bottom: 30px;"></div>
         </div>
         </div>
         <div id="right">
-        <div>
+        <div id="payment">
         <h3 style="color:grey;margin-left: 10px;padding-top: 10px;">PAYMENT DETAILS</h3>
+          <div id="upper">
+           <div> 
+            <h3>Total Amount *</h3>
+          </div>
+           <div>  
+            <h4 id="total"></h4>
+           </div>
+          </div>
+           <div id="lower">
+          <div></div>
+          <div><button style="width:100%;background-color:#24aeb1;height:80%;">PAY</button></div>
+      </div>
         </div>
-        <div>
+        <div id="bottom">
             <P style="color:grey;">IMPORTANT UPDATE : Due to the current Covid 19 situation, we cannot commit to our mentioned delivery dates. We are working hard to meet the unprecedented demand and we thank you for your patience.</P>
 
             <P style="color:grey;">Netmeds is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personnel to be his agent for delivery of the goods. For details read Terms & Conditions</P>
@@ -189,3 +258,26 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     </div>
 </body>
 </html>
+<script>
+    let carttotal=JSON.parse(localStorage.getItem("order-page"))
+  let cartdata=JSON.parse(localStorage.getItem("cart-page"))
+     display(cartdata)
+
+function display(cartdata){
+
+  cartdata.forEach(function (elem) {
+    let mdiv=document.createElement("div")
+    let img=document.createElement("img")
+    img.setAttribute("src",elem.image_url)
+    let h3=document.createElement("h3")
+    h3.innerText=elem.name
+    let p=document.createElement("p")
+    p.innerText=elem.strikedoffprice
+    let h4=document.createElement("h4")
+    h4.innerText=elem.price
+    mdiv.append(img,h3,p,h4)
+    document.querySelector("#product").append(mdiv)
+  })
+}
+        document.querySelector("#total").innerText=("RS "+carttotal);
+</script>
