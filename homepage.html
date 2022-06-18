@@ -704,7 +704,7 @@
     }
 
     .list {
-        width: 300px;
+        width: 200px;
         height: 550px;
         margin-top: 30px;
         display: inline-block;
@@ -893,6 +893,8 @@
         text-align: center;
         margin-top: 15px;
         border-radius: 10px;
+        cursor: pointer;
+        color: white;
     }
 
     .gray {
@@ -908,7 +910,6 @@
         line-height: 22px;
         padding: 0 8px;
         display: block;
-
         font-family: LatoSemiBold;
         margin: 0;
         -webkit-line-clamp: 2;
@@ -1019,14 +1020,14 @@
             <div class="b1">
                 <span id="numprod">2</span>
                 <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
-                <a href="l"> Cart
+                <a href="cart.html"> Cart
 
             </div>
 
 
             <div class="b1">
                 <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-                <a href=""> SignIn/SignUp
+                <a href="signin.html"> SignIn/SignUp
                 </a>
             </div>
         </div>
@@ -1055,12 +1056,14 @@
             <div>
 
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
-                <p class="pmed">Wellness</p>
+                <a href="category.html">
+                    <p class="pmed">Wellness</p>
+                </a>
             </div>
 
             <div>
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
-                <a href="labtest.html">
+                <a href="lab.html">
                     <p class="pmed">Lab Tests</p>
                 </a>
             </div>
@@ -1069,9 +1072,11 @@
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <div class="med">Beauty</div>
+                        <a href="category.html">
+                            <div class="med">Beauty</div>
+                        </a>
                         <div class="dropdown-content">
-                            <a href="bodycare.html">Body Care</a>
+                            <a href="#">Body Care</a>
                             <a href="#">Face Care</a>
                             <a href="#">Fragrance</a>
                             <a href="#">Hands and Feet</a>
@@ -1103,16 +1108,16 @@
 
     <div class="nbox">
         <ul class="navbar">
-            <li class="la"><a href="#">COVID Essentials</a></li>
-            <li class="la"><a href="#">Diabetes</a></li>
-            <li class="la"> <a href="#">Eyewear</a></li>
-            <li class="la"><a href="#">Ayush</a></li>
-            <li class="la"><a href="#">Fitness</a></li>
-            <li class="la"><a href="#">Mom &amp; Baby</a></li>
-            <li class="la"><a href="#">Devices</a></li>
-            <li class="la"><a href="#">Surgicals</a></li>
-            <li class="la"><a href="#">Sexual Wellness</a></li>
-            <li class="la"><a href="#">Treatments</a></li>
+            <li class="la"><a href="product.html">COVID Essentials</a></li>
+            <li class="la"><a href="product.html">Diabetes</a></li>
+            <li class="la"> <a href="product.html">Eyewear</a></li>
+            <li class="la"><a href="product.html">Ayush</a></li>
+            <li class="la"><a href="product.html">Fitness</a></li>
+            <li class="la"><a href="product.html">Mom &amp; Baby</a></li>
+            <li class="la"><a href="product.html">Devices</a></li>
+            <li class="la"><a href="product.html">Surgicals</a></li>
+            <li class="la"><a href="product.html">Sexual Wellness</a></li>
+            <li class="la"><a href="product.html">Treatments</a></li>
         </ul>
 
     </div>
@@ -1141,31 +1146,42 @@
     </div>
 
     <div id="flex">
-        <div>
-            <img class="fleximg" src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg">
-            <div class="flexbox"><span class="content-txt"> <strong><span class="heading">Order Medicine</span></strong>
+        <a href="med.html">
+            <div>
+                <img class="fleximg" src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg">
+                <div style="color: black;" class="flexbox"><span class="content-txt"> <strong><span
+                                class="heading">Order
+                                Medicine</span></strong>
 
-                    <span class="save_text"> Save Upto 60% off</span> </span>
-            </div>
-        </div>
+                        <span class="save_text"> Save Upto 60% off</span> </span>
+                </div>
+        </a>
+    </div>
 
+    <a href="category.html">
         <div>
             <img class="fleximg" src=" https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg">
 
-            <div class="flexbox"><span class="content-txt"> <strong><span class="heading">Beauty</span></strong>
+
+            <div style="color: black;" class="flexbox"><span class="content-txt"> <strong><span
+                            class="heading">Beauty</span></strong>
+
 
                     <span class="save_text"> Save Upto 60% off</span> </span>
             </div>
-        </div>
-
+    </a>
+    </div>
+    <a href="category.html">
         <div>
             <img class="fleximg" src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg">
-            <div class="flexbox"><span class="content-txt"> <strong><span class="heading">Wellness</span></span>
-                </strong>
-                <br>
-                <span class="save_text"> Save Upto 60% off</span> </span>
+
+            <div style="color: black;" class="flexbox"><span class="content-txt"> <strong><span
+                            class="heading">Wellness</span></strong>
+
+                    <span class="save_text"> Save Upto 60% off</span> </span>
             </div>
-        </div>
+    </a>
+    </div>
 
     </div>
 
@@ -1215,7 +1231,7 @@
             <h2 class="sectionText">Previous Orders</h2>
             <span class="sectionSpan">Your previously ordered products</span>
             <br>
-            <a class="view" href="cartofnetmeds.html">View Orders</a>
+            <a class="view" href="cart.html">View Orders</a>
             <span><img class="sectionImg"
                     src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/new-icons/arrow_mark.svg">
             </span>
@@ -1233,7 +1249,7 @@
         <div class="lSection">
             <h2 class="beauty">Beauty Products</h2>
             <span class="save">Save Upto 60% off</span>
-            <a class="xbtn" href="bodycare.html">Explore Beauty</a>
+            <a class="xbtn" href="cart.html">Explore Beauty</a>
 
 
         </div>
@@ -1273,25 +1289,33 @@
 
     <div id="row2">
         <div>
-            <img style="width: 200px;height:200px; margin-left: 30px;margin-bottom: 15px;" class="boximg"
-                src="https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg">
+            <a href="product.html">
+                <img style="width: 200px;height:200px; margin-left: 30px;margin-bottom: 15px;" class="boximg"
+                    src="https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg">
+            </a>
             <span class="textTitle">Ayush</span>
         </div>
         <div>
-            <img style="width: 200px;height:200px; margin-left: 30px;margin-bottom: 15px;" class="boximg"
-                src=" https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg">
+            <a href="product.html"><img style="width: 200px;height:200px; margin-left: 30px;margin-bottom: 15px;"
+                    class="boximg" src=" https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg"></a>
+
             <span class="textTitle">Mom & Baby</span>
         </div>
         <div>
-            <img class="boximg" src="https://www.netmeds.com/images/category/665/thumb/devices_1.jpg">
+            <a href="product.html"><img class="boximg"
+                    src="https://www.netmeds.com/images/category/665/thumb/devices_1.jpg"></a>
+
             <span class="textTitle">Devices</span>
         </div>
         <div>
-            <img class="boximg" src="https://www.netmeds.com/images/category/500/thumb/fitness_1.jpg">
+            <a href="product.html"><img class="boximg"
+                    src="https://www.netmeds.com/images/category/500/thumb/fitness_1.jpg"></a>
+
             <span class="textTitle">Fitness</span>
         </div>
         <div>
-            <img class="boximg" src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_2.jpg">
+            <a href="product.html"><img class="boximg"
+                    src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_2.jpg"></a>
             <span class="textTitle">Sexual Wellness</span>
         </div>
     </div>
@@ -1335,27 +1359,32 @@
 
     <div id="row2">
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=3">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=3"></a>
             <span class="textTitle"> Dr-Vaidya's</span>
             <span class="bsave"> UP TO 63% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=3">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=3"></a>
             <span class="textTitle">Accu-Chek</span>
             <span class="bsave"> UP TO 21% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dettol.jpg?v=3">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dettol.jpg?v=3"></a>
             <span class="textTitle">Dettol</span>
             <span class="bsave"> UP TO 33% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=3">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=3"></a>
             <span class="textTitle"> Dabur</span>
             <span class="bsave"> UP TO 11% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/himalaya.jpg?v=3">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/himalaya.jpg?v=3"></a>
             <span class="textTitle">Himalaya</span>
             <span class="bsave"> UP TO 78% OFF </span>
         </div>
@@ -1382,36 +1411,41 @@
         </div>
         <div>
 
-            <a class="explore" href="bodycare.html">Explore Plans</a>
+            <a class="explore" href="homepage.html">Explore Plans</a>
         </div>
     </div>
 
 
-    <h2 class="pay"> Categories in Focus <a href="bodycare.html" class="viewall"> View All </a> </h2>
+    <h2 class="pay"> Categories in Focus <a href="homepage.html" class="viewall"> View All </a> </h2>
 
     <div id="row2">
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg"></a>
             <span class="textTitle">Men's Care</span>
             <span class="bsave"> UP TO 50% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg"></a>
             <span class="textTitle">Feminine Hygiene</span>
             <span class="bsave"> UP TO 21% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/525/thumb/Body_Care_4.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/525/thumb/Body_Care_4.jpg"></a>
             <span class="textTitle">Body Care</span>
             <span class="bsave"> UP TO 33% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg"></a>
             <span class="textTitle"> Ayurvedic</span>
             <span class="bsave"> UP TO 11% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg"></a>
             <span class="textTitle">Orthopaedics</span>
             <span class="bsave"> UP TO 78% OFF </span>
         </div>
@@ -1421,27 +1455,32 @@
         <h2 class="payy">Explore Beauty </h2>
         <div id="row2">
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg"></a>
                 <span class="textTitle">Men's Care</span>
                 <span class="bsave"> UP TO 50% OFF </span>
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg"></a>
                 <span class="textTitle">Feminine Hygiene</span>
                 <span class="bsave"> UP TO 21% OFF </span>
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/category/525/thumb/Body_Care_4.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/category/525/thumb/Body_Care_4.jpg"></a>
                 <span class="textTitle">Body Care</span>
                 <span class="bsave"> UP TO 33% OFF </span>
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg"></a>
                 <span class="textTitle"> Ayurvedic</span>
                 <span class="bsave"> UP TO 11% OFF </span>
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg"></a>
                 <span class="textTitle">Orthopaedics</span>
                 <span class="bsave"> UP TO 78% OFF </span>
             </div>
@@ -1455,56 +1494,66 @@
         <h2 class="payy"> Best in Beauty </h2>
         <div id="row2">
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg"></a>
                 <strong><span class="textTitlee">Garnier</span></strong>
 
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg"></a>
                 <strong><span class="textTitlee">Feminine Hygiene</span></strong>
 
             </div>
             <div>
-                <img class="brand" src="	https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg"></a>
                 <strong><span class="textTitlee">Myglamm</span></strong>
 
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg"></a>
                 <strong> <span class="textTitlee"> Colorbar</span></strong>
 
             </div>
             <div>
-                <img class="brand" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg">
+                <a href="product.html"><img class="brand"
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg"></a>
                 <strong><span class="textTitlee">Plum</span></strong>
 
             </div>
         </div>
     </div>
 
-    <h2> Personal Care <a href="" class="viewall"> View All </a> </h2>
+    <h2> Personal Care <a href="homepage.html" class="viewall"> View All </a> </h2>
     <div id="row2">
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg"></a>
             <span class="textTitle">Body Care</span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg"></a>
             <span class="textTitle">Mom & Baby</span>
 
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3934/thumb/skin_treatment_1.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3934/thumb/skin_treatment_1.jpg"></a>
             <span class="textTitle">Skin Treatment</span>
 
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3495/thumb/face_wash_cleansers_3.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3495/thumb/face_wash_cleansers_3.jpg"></a>
             <span class="textTitle"> Face Wash & Cleansers</span>
 
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash_2.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash_2.jpg"></a>
             <span class="textTitle">Shower Gel & Body Wash</span>
 
         </div>
@@ -1513,27 +1562,32 @@
     <h2 style="margin-top: 50px;"> Men's Grooming <a href="" class="viewall"> View All </a> </h2>
     <div id="row2">
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/100/thumb/Mens_Care_2.jpg"></a>
             <span class="textTitle">Men's Care</span>
             <span class="bsave"> UP TO 50% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3002/thumb/Razors-&-Cartridges.jpg?v=1">
+            <a href="p"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3002/thumb/Razors-&-Cartridges.jpg?v=1"></a>
             <span class="textTitle">Razors & Cartridges</span>
             <span class="bsave"> UP TO 21% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3591/thumb/Beard-Oil.jpg?v=1">
+            <a href="p"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3591/thumb/Beard-Oil.jpg?v=1"></a>
             <span class="textTitle">Beard Oil</span>
             <span class="bsave"> UP TO 33% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3593/thumb/Beard-Wash.jpg?v=1">
+            <a href="p"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3593/thumb/Beard-Wash.jpg?v=1"></a>
             <span class="textTitle"> Beard Wash</span>
             <span class="bsave"> UP TO 11% OFF </span>
         </div>
         <div>
-            <img class="brand" src="https://www.netmeds.com/images/category/3658/thumb/Grooming-Accessories.jpg?v=1">
+            <a href="product.html"><img class="brand"
+                    src="https://www.netmeds.com/images/category/3658/thumb/Grooming-Accessories.jpg?v=1"></a>
             <span class="textTitle">Grooming Accessories</span>
             <span class="bsave"> UP TO 78% OFF </span>
         </div>
@@ -1550,35 +1604,35 @@
                 <span class="textTitle">Men's Care</span>
                 <span class="bsave"> Rs. 864.00 </span>
                 <span class="bsave"> UP TO 50% OFF </span>
-                <button class="bluebtn">ADD TO CART</button>
+                <a href="cart.html"><button class="bluebtn">ADD TO CART</button></a>
             </div>
             <div style="height: 350px;">
                 <img class="brand" src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg">
                 <span class="textTitle">Feminine Hygiene</span>
                 <span class="bsave"> Rs. 864.00 </span>
                 <span class="bsave"> UP TO 21% OFF </span>
-                <button class="bluebtn">ADD TO CART</button>
+                <a href="cart.html"><button class="bluebtn">ADD TO CART</button></a>
             </div>
             <div style="height: 350px;">
                 <img class="brand" src="https://www.netmeds.com/images/category/525/thumb/Body_Care_4.jpg">
                 <span class="textTitle">Body Care</span>
                 <span class="bsave"> Rs. 864.00 </span>
                 <span class="bsave"> UP TO 33% OFF </span>
-                <button class="bluebtn">ADD TO CART</button>
+                <a href="cart.html"><button class="bluebtn">ADD TO CART</button></a>
             </div>
             <div style="height: 350px;">
                 <img class="brand" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg">
                 <span class="textTitle"> Ayurvedic</span>
                 <span class="bsave"> Rs. 864.00 </span>
                 <span class="bsave"> UP TO 11% OFF </span>
-                <button class="bluebtn">ADD TO CART</button>
+                <a href="cart.html"><button class="bluebtn">ADD TO CART</button></a>
             </div>
             <div style="height: 350px;">
                 <img class="brand" src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg">
                 <span class="textTitle">Orthopaedics</span>
                 <span class="bsave"> Rs. 864.00 </span>
                 <span class="bsave"> UP TO 78% OFF </span>
-                <button class="bluebtn">ADD TO CART</button>
+                <a href="cart.html"><button class="bluebtn">ADD TO CART</button></a>
             </div>
         </div>
     </div>
@@ -1773,17 +1827,17 @@
     <div class="list">
         <ul type="none">
             <h1 class="head2">Company</h1>
-            <li><a href="https://www.netmeds.com/about-us">About Netmeds</a></li>
-            <li><a href="https://www.netmeds.com/testimonial">Customers Speak</a></li>
-            <li><a href="https://www.netmeds.com/news">In the News</a></li>
-            <li id="netmeds_career"><a href="https://netmeds.darwinbox.in/ms/candidate/careers">Career</a></li>
-            <li><a href="https://www.netmeds.com/terms-and-conditions">Terms and Conditions</a></li>
-            <li><a href="https://www.netmeds.com/privacy-policy">Privacy Policy</a></li>
-            <li><a href="https://www.netmeds.com/fees-and-payments-policy">Fees and Payments Policy</a></li>
-            <li><a href="https://www.netmeds.com/shipping-and-delivery-policy">Shipping and Delivery Policy</a></li>
-            <li><a href="https://www.netmeds.com/return-refund-and-cancellation-policy">Return, Refund and Cancellation
+            <li><a href="">About Netmeds</a></li>
+            <li><a href="">Customers Speak</a></li>
+            <li><a href="">In the News</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Fees and Payments Policy</a></li>
+            <li><a href="">Shipping and Delivery Policy</a></li>
+            <li><a href="">Return, Refund and Cancellation
                     Policy</a></li>
-            <li><a class="contact-link" href="https://www.netmeds.com/contact-us">Contact</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </div>
 
@@ -1792,11 +1846,11 @@
         <ul type="none">
             <h1 class="head2">Shopping</h1>
 
-            <li><a href="https://www.netmeds.com/prescriptions">Browse by A-Z</a></li>
-            <li><a href="https://www.netmeds.com/medicine/manufacturers">Browse by Manufacturers</a></li>
-            <li><a href="https://www.netmeds.com/health-library">Health Articles</a></li>
-            <li class="sbilabhide"><a href="https://www.netmeds.com/offers">Offers / Coupons</a></li>
-            <li><a href="https://www.netmeds.com/faqs">FAQs</a></li>
+            <li><a href="med.html">Browse by A-Z</a></li>
+            <li><a href="">Browse by Manufacturers</a></li>
+            <li><a href="">Health Articles</a></li>
+            <li><a href="">Offers / Coupons</a></li>
+            <li><a href="">FAQs</a></li>
 
         </ul>
     </div>
@@ -1806,12 +1860,12 @@
         <ul type="none">
 
             <h1 class="head2">Social</h1>
-            <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
-            <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
-            <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
-            <li><a href="https://in.linkedin.com/company/netmeds-marketplace-limited">LinkedIn</a></li>
-            <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">Youtube</a></li>
-            <li><a href="https://www.netmeds.com/refer-earn">Refer &amp; Earn</a></li>
+            <li><a href="">Patients Alike</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">Refer &amp; Earn</a></li>
         </ul>
     </div>
 
@@ -1861,34 +1915,6 @@
 </html>
 <script>
 
-
-    let x = document.getElementById("searchbar").value;
-    console.log(x)
-
-    function search_med() {
-        // let input = document.getElementById("searchbar").value;
-        // // input = input.toLowerCase();
-        // let x = ["cat", "dog", "elephant", "lokesh", "hemant", "dhanashri", "ahire"];
-        // console.log(input)
-        // for (i = 0; i < x.length; i++) {
-        //     // if (!x[i].innerHTML.toLowerCase().includes(input)) {
-        //     //     x[i].style.display = "none";
-        //     // }
-        //     if (x[i] == value) {
-        //         x[i].style.display = "list-item";
-        //     }
-        // }
-        let y = document.getElementById("searchbar").value;
-        console.log(y)
-        let x = ["cat", "dog", "elephant", "lokesh", "hemant", "dhanashri", "ahire"];
-        for (i = 0; i < x.length; i++) {
-
-            if (x[i] == y) {
-                x[i].style.display = flex;
-            }
-        }
-
-    }
 
 </script>
 
