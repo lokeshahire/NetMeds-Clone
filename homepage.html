@@ -1018,7 +1018,7 @@
             </div>
 
             <div class="b1">
-                <span id="numprod">2</span>
+                <span id="numprod"></span>
                 <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
                 <a href="cart.html"> Cart
 
@@ -1915,7 +1915,18 @@
 </html>
 <script>
 
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
 
+
+
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
+
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
+
+    txt.appendChild(spantext)
 </script>
 
 

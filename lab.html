@@ -695,6 +695,10 @@
         margin-left: -0.5%;
 
     }
+
+    button {
+        cursor: pointer;
+    }
 </style>
 
 
@@ -726,16 +730,16 @@
             </div>
 
             <div class="b1">
-                <span id="numprod">2</span>
+                <span id="numprod"></span>
                 <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
-                <a href="l"> Cart
+                <a href="cart.html"> Cart
 
             </div>
 
 
             <div class="b1">
                 <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-                <a href=""> SignIn/SignUp
+                <a href="signin.html"> SignIn/SignUp
                 </a>
             </div>
         </div>
@@ -750,7 +754,9 @@
                     src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <div class="med">Medicines</div>
+                        <a href="med.html">
+                            <div class="med">Medicines</div>
+                        </a>
                         <div class="dropdown-content">
                             <a href="#">All Medicines</a>
                             <a href="#">Previously ordered products</a>
@@ -762,12 +768,14 @@
             <div>
 
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
-                <p class="pmed">Wellness</p>
+                <a href="category.html">
+                    <p class="pmed">Wellness</p>
+                </a>
             </div>
 
             <div>
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
-                <a href="labtest.html">
+                <a href="lab.html">
                     <p class="pmed">Lab Tests</p>
                 </a>
             </div>
@@ -776,9 +784,11 @@
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <div class="med">Beauty</div>
+                        <a href="category.html">
+                            <div class="med">Beauty</div>
+                        </a>
                         <div class="dropdown-content">
-                            <a href="bodycare.html">Body Care</a>
+                            <a href="">Body Care</a>
                             <a href="#">Face Care</a>
                             <a href="#">Fragrance</a>
                             <a href="#">Hands and Feet</a>
@@ -808,18 +818,19 @@
     </div>
 
 
+
     <div class="nbox">
         <ul class="navbar">
-            <li class="la"><a href="#">COVID Essentials</a></li>
-            <li class="la"><a href="#">Diabetes</a></li>
-            <li class="la"> <a href="#">Eyewear</a></li>
-            <li class="la"><a href="#">Ayush</a></li>
-            <li class="la"><a href="#">Fitness</a></li>
-            <li class="la"><a href="#">Mom &amp; Baby</a></li>
-            <li class="la"><a href="#">Devices</a></li>
-            <li class="la"><a href="#">Surgicals</a></li>
-            <li class="la"><a href="#">Sexual Wellness</a></li>
-            <li class="la"><a href="#">Treatments</a></li>
+            <li class="la"><a href="product.html">COVID Essentials</a></li>
+            <li class="la"><a href="product.html">Diabetes</a></li>
+            <li class="la"> <a href="product.html">Eyewear</a></li>
+            <li class="la"><a href="product.html">Ayush</a></li>
+            <li class="la"><a href="product.html">Fitness</a></li>
+            <li class="la"><a href="product.html">Mom &amp; Baby</a></li>
+            <li class="la"><a href="product.html">Devices</a></li>
+            <li class="la"><a href="product.html">Surgicals</a></li>
+            <li class="la"><a href="product.html">Sexual Wellness</a></li>
+            <li class="la"><a href="product.html">Treatments</a></li>
         </ul>
 
     </div>
@@ -1201,17 +1212,17 @@
     <div class="list">
         <ul type="none">
             <h1 class="head2">Company</h1>
-            <li><a href="https://www.netmeds.com/about-us">About Netmeds</a></li>
-            <li><a href="https://www.netmeds.com/testimonial">Customers Speak</a></li>
-            <li><a href="https://www.netmeds.com/news">In the News</a></li>
-            <li id="netmeds_career"><a href="https://netmeds.darwinbox.in/ms/candidate/careers">Career</a></li>
-            <li><a href="https://www.netmeds.com/terms-and-conditions">Terms and Conditions</a></li>
-            <li><a href="https://www.netmeds.com/privacy-policy">Privacy Policy</a></li>
-            <li><a href="https://www.netmeds.com/fees-and-payments-policy">Fees and Payments Policy</a></li>
-            <li><a href="https://www.netmeds.com/shipping-and-delivery-policy">Shipping and Delivery Policy</a></li>
-            <li><a href="https://www.netmeds.com/return-refund-and-cancellation-policy">Return, Refund and Cancellation
+            <li><a href="">About Netmeds</a></li>
+            <li><a href="">Customers Speak</a></li>
+            <li><a href="">In the News</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Fees and Payments Policy</a></li>
+            <li><a href="">Shipping and Delivery Policy</a></li>
+            <li><a href="">Return, Refund and Cancellation
                     Policy</a></li>
-            <li><a class="contact-link" href="https://www.netmeds.com/contact-us">Contact</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </div>
 
@@ -1220,11 +1231,11 @@
         <ul type="none">
             <h1 class="head2">Shopping</h1>
 
-            <li><a href="https://www.netmeds.com/prescriptions">Browse by A-Z</a></li>
-            <li><a href="https://www.netmeds.com/medicine/manufacturers">Browse by Manufacturers</a></li>
-            <li><a href="https://www.netmeds.com/health-library">Health Articles</a></li>
-            <li class="sbilabhide"><a href="https://www.netmeds.com/offers">Offers / Coupons</a></li>
-            <li><a href="https://www.netmeds.com/faqs">FAQs</a></li>
+            <li><a href="">Browse by A-Z</a></li>
+            <li><a href="">Browse by Manufacturers</a></li>
+            <li><a href="">Health Articles</a></li>
+            <li><a href="">Offers / Coupons</a></li>
+            <li><a href="">FAQs</a></li>
 
         </ul>
     </div>
@@ -1234,12 +1245,12 @@
         <ul type="none">
 
             <h1 class="head2">Social</h1>
-            <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
-            <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
-            <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
-            <li><a href="https://in.linkedin.com/company/netmeds-marketplace-limited">LinkedIn</a></li>
-            <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">Youtube</a></li>
-            <li><a href="https://www.netmeds.com/refer-earn">Refer &amp; Earn</a></li>
+            <li><a href="">Patients Alike</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">Refer &amp; Earn</a></li>
         </ul>
     </div>
 
@@ -1275,7 +1286,7 @@
             <div class="footer_link sbilabhide">
                 <a href="">Lab Tests</a>
             </div>
-            <div class="footer_link"><a href="">Beauty</a></div>
+            <div class="footer_link"><a href="category.html">Beauty</a></div>
             <div class="copy-txt">Copyright© 2021. All Rights Reserved.
 
             </div>
@@ -1287,50 +1298,17 @@
 
 
 </html>
-
-<!-- <script>
-    var popular_Sell = [
-        { name: "Netmeds Swasthya", para: "Book Regular Health Check-up Package Netmeds Swasthya, a Basic Screening Preventive Health Check-up Profile including 64 tests.", del: "Rs.3200", price: "Rs.1200", },
-        { name: "Netmeds Shield Pack", para: "Netmeds Shield Pack helps to protect against a particular danger or risk. It includes a unique diagnostic profile of 56 tests for a comprehensive health evaluation.", del: "Rs.3000", price: "Rs.900", },
-        { name: "Netmeds Health Pack", para: "Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Netmeds Health Pack comprises of 35 parameters of regular tests that have been specially designed keeping your health in mind.", del: "Rs.1699", price: "Rs.499", },
-        { name: "Netmeds Diabetic Checkup", para: "Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.", del: "Rs.3450", price: " Rs.899", },
-        { name: "ECHO", para: "Echocardiography or ECHO, is a painless test that uses sound waves to create moving pictures of your heart.", del: "Rs 3000 ", price: "Rs.1600", },
-        { name: "ECG", para: "An ECG is a simple and valuable test. Sometimes it can definitely diagnose a heart problem. The electrocardiogram (ECG)...", del: "Rs 300", price: "Rs.250", },
-        { name: "PET Scan", para: "PET scan may detect the early onset of disease before other imaging tests can.", del: "Rs 1200", price: "Rs.9600", },
-        { name: "Ultrasound Whole Abdomen", para: "Ultrasound is used to study the development of an unborn baby, abdominal and pelvic organs and blood vessels.", del: "Rs 1299", price: "Rs.999", }
+<script>
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
 
 
 
-    ]
-    popular_Sell.map(function (elem) {
-        var Name = document.createElement("h3");
-        Name.textContent = elem.name;
-        var div1 = document.createElement("div");
-        div1.append(Name);
-        var paragraph = document.createElement("p");
-        paragraph.textContent = elem.para;
-        var div2 = document.createElement("div");
-        div2.setAttribute("class", "toppara")
-        div2.append(paragraph);
-        var del_price = document.createElement("p");
-        del_price.setAttribute("class", "delprice")
-        del_price.textContent = elem.del;
-        var price = document.createElement("h2");
-        price.setAttribute("class", "pricesell")
-        price.textContent = elem.price;
-        var div3 = document.createElement("div");
-        div3.setAttribute("class", "topprice");
-        div3.append(del_price, price);
-        var btn = document.createElement("span");
-        btn.textContent = "BOOK NOW";
-        var div5 = document.createElement("div");
-        div5.setAttribute("class", "btn");
-        div5.append(btn);
-        var box = document.createElement("div");
-        // box.setAttribute("class", "box_top_Sell");
-        topBox.append(div1, div2, div3, div5);
-        // document.getElementById("top_sell_boxes").append(box);
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
 
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
 
-    });
-</script> -->
+    txt.appendChild(spantext)
+</script>

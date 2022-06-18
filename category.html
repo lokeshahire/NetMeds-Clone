@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+    <title>Netmed.com: India Online Pharmacy</title>
+
+    <style>
+        body {
+            background-color: #f3f3f3;
+        }
+
+        #spotlight {
+
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: -4px;
+
+
+        }
+
+        #spotlight>img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .brand {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 350px;
+            margin-top: 15px;
+
+
+        }
+
+        #Features_brand {
+            width: 100%;
+            margin: auto;
+            height: 280px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+        }
+
+        #Features_brand>div {
+            border: 1px solid transparent;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #Features_brand>div>p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        .offers {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 270px;
+            margin-top: 15px;
+
+
+        }
+
+        #many_offers {
+            width: 100%;
+            margin: auto;
+            height: 240px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            border: 1px solid transparent;
+        }
+
+        #many_offers>div {
+            border: 2px solid transparent;
+            width: 310%;
+            height: 200px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+
+
+
+
+        .Category {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 350px;
+            margin-top: 15px;
+
+
+        }
+
+        #shop_category {
+            width: 100%;
+            margin: auto;
+            height: 280px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+        }
+
+        #shop_category>div {
+            border: 1px solid transparent;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #shop_category>div>p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #shop_category>div:nth-child(4)>p {
+
+            margin-top: 60px;
+
+
+        }
+
+
+
+
+        .essential {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 370px;
+            margin-top: 15px;
+
+
+        }
+
+        .essential>div {
+            display: flex;
+
+
+
+
+
+        }
+
+        .essential>div>p {
+
+            color: rgb(209, 6, 6);
+
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+
+            margin-left: 1000px;
+
+
+
+
+        }
+
+
+        #skin_care_essential {
+            width: 100%;
+            margin: auto;
+            height: 280px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+        }
+
+        #skin_care_essential>div {
+            border: 1px solid transparent;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #skin_care_essential>div>p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #skin_care_essential>div:nth-child(4)>p {
+
+            margin-top: 60px;
+
+
+        }
+
+
+
+
+        .hair {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 370px;
+            margin-top: 15px;
+
+
+        }
+
+        .hair>div {
+            display: flex;
+
+
+        }
+
+        .hair>div>p {
+
+            color: red;
+            justify-content: space-between;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 1000px;
+
+
+
+        }
+
+
+        #hair_care {
+            width: 100%;
+            margin: auto;
+            height: 280px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+        }
+
+        #hair_care>div {
+            border: 1px solid transparent;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #hair_care>div>p {
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #hair_care>div:nth-child(4)>p {
+
+            margin-top: 20px;
+
+
+        }
+
+
+        .mens {
+            border: 1px solid transparent;
+            width: 98%;
+            margin: auto;
+            height: 370px;
+            margin-top: 15px;
+
+
+        }
+
+        .mens>div {
+            display: flex;
+
+
+        }
+
+        .mens>div>p {
+
+            color: red;
+            justify-content: space-between;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 1000px;
+
+
+
+        }
+
+
+        #mens_grooming {
+            width: 100%;
+            margin: auto;
+            height: 280px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+        }
+
+        #mens_grooming>div {
+            border: 1px solid transparent;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #mens_grooming>div>p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #mens_grooming>div:nth-child(4)>p {
+
+            margin-top: 15px;
+
+
+        }
+
+
+
+
+
+        .beauty {
+            border: 1px solid transparent;
+            width: 100%;
+            margin: auto;
+            height: 180px;
+            margin-top: 15px;
+            background-color: #ef4281;
+
+
+
+
+        }
+
+        .beauty>div {
+            display: flex;
+
+        }
+
+        .beauty>div>h2 {
+            margin-left: 20px;
+            color: white;
+        }
+
+
+        .beauty>div>p {
+
+            color: white;
+            justify-content: space-between;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 1000px;
+
+
+
+        }
+
+
+        #latest_beauty {
+            width: 100%;
+            margin: auto;
+            height: 220px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+
+
+
+        }
+
+        #latest_beauty>div {
+
+            width: 90%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-left: 20px;
+
+
+        }
+
+        #latest_beauty>div>p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #latest_beauty>div:nth-child(4)>p {
+
+            margin-top: 15px;
+
+
+        }
+
+        #latest_beauty>div>img {
+            width: 100%;
+            height: 150px;
+
+        }
+
+
+        .border {
+            border: 1px solid transparent;
+            width: 100%;
+            height: 180px;
+        }
+
+
+
+
+
+
+        .footer {
+            border: 1px solid transparent;
+            width: 100%;
+            height: 710px;
+            background-color: white;
+        }
+
+
+        #logo {
+            border: 1px solid transparent;
+            width: 100%;
+            height: 130px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        #logo>div:first-child {
+            border: 1px solid transparent;
+            width: 350px;
+
+        }
+
+        #logo>div:first-child>img {
+            text-align: center;
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+
+        #logo>div:nth-child(2) {
+            border: 1px solid transparent;
+            width: 780px;
+            margin-left: 10px;
+        }
+
+        #logo>div:nth-child(2)>p {
+            color: #818486;
+            font-size: 18px;
+            margin-top: 40px;
+
+        }
+
+        hr {
+            width: 98%;
+
+        }
+
+        #four_footer {
+            border: 1px solid transparent;
+            width: 98%;
+            height: 400px;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin-bottom: 50px;
+        }
+
+        #four_footer>div {
+            border: 1px solid transparent;
+            height: auto;
+            width: auto;
+        }
+
+        #four_footer>div>p:first-child {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+        .control {
+            margin-top: 35px;
+
+        }
+
+        #text {
+            width: 270px;
+            border: 0px;
+            margin-left: 5px;
+        }
+
+        #btn {
+            width: 60px;
+            border: 0px;
+            color: green;
+        }
+
+        #gbtn {
+            border: 1px solid transparent;
+            margin-top: 30px;
+            width: auto;
+            height: 60px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        #gbtn>div {
+            border: 1px solid transparent;
+            border-radius: 5px;
+            height: 60px;
+            width: auto;
+        }
+
+        #gbtn>div>img {
+            width: 168px;
+            height: auto;
+        }
+
+        #Lfooter {
+            border: 1px solid transparent;
+            margin-top: 10px;
+            width: 98%;
+            margin: auto;
+            height: 60px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        #Lfooter>div {
+            border: 1px solid transparent;
+        }
+
+        #Lfooter>div>p {
+            color: #656769;
+        }
+
+
+
+
+
+
+
+
+
+
+        #searchBox {
+            font-family: LatoSemiBold;
+            width: 40%;
+            height: 45px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1px;
+            margin: 18px;
+            background: white;
+            margin-left: -20px;
+        }
+
+        .val {
+            width: 60px;
+            height: 20px;
+        }
+
+        #sel {
+            width: 25%;
+            height: 30px;
+            vertical-align: middle;
+            margin: 8px;
+            border: none;
+            display: inline-block;
+            color: #24aeb1;
+            font-family: LatoSemiBold;
+        }
+
+        #searchbar {
+            width: 70%;
+            height: 90%;
+            border: transparent;
+        }
+
+        .carousel-cell {
+            width: auto;
+        }
+
+        .carousel-cell:before {
+            display: block;
+        }
+
+
+
+
+
+
+        #searchBox {
+            font-family: LatoSemiBold;
+            width: 42%;
+            height: 50px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1px;
+            margin: 18px;
+            background: white;
+            margin-left: -1%;
+        }
+
+        .val {
+            width: 50%;
+            height: 20px;
+        }
+
+        #sel {
+            width: 25%;
+            height: 35px;
+            vertical-align: middle;
+            margin: 8px;
+            border: none;
+            display: inline-block;
+            color: #24aeb1;
+            font-family: LatoSemiBold;
+
+        }
+
+        #mainbox {
+            width: 100%;
+            height: 100px;
+            background-color: #32aeb1;
+            font-family: LatoSemiBold;
+            position: fixed;
+            margin-top: -100px;
+            margin-left: -1%;
+            z-index: 1;
+        }
+
+        .mainImg {
+            width: 12%;
+            margin: 15px;
+            vertical-align: middle;
+            height: 50px;
+            background-color: #32aeb1;
+            display: inline-block;
+            font-family: LatoSemiBold;
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #32aeb1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        #boxes {
+            width: 31%;
+            height: 23px;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            font-weight: 500;
+            margin-top: -25px;
+        }
+
+
+        .b1 {
+            width: 25%;
+            height: 9px;
+            display: inline-block;
+            padding: 5px;
+            color: white;
+            font-weight: 500
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .icon {
+            margin: -5px;
+        }
+
+        #numprod {
+            display: block;
+            background: #ee4380 !important;
+            color: #fff !important;
+            border-radius: 6.5px;
+            padding: 0px;
+            margin-bottom: -1%;
+            width: 12%;
+            text-align: center;
+            line-height: 14px;
+            font-family: LatoBold;
+            font-size: 10px;
+            margin-left: 10%;
+        }
+
+        .b1 a {
+            text-decoration: none;
+            color: white
+        }
+
+        #searchbar {
+            width: 70%;
+            height: 40px;
+            border: transparent;
+        }
+
+        #secondbigbox {
+            background: #32aeb1;
+            width: auto;
+            margin-left: -1%;
+        }
+
+        .row {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px
+        }
+
+        .row>div {
+            height: 50px;
+            flex-basis: 180px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        #rimg {
+            padding: 6px;
+            display: inline-block;
+        }
+
+        ul.nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 36px;
+            line-height: 26px;
+            font-size: 13px;
+            color: black;
+        }
+
+        ul.nav li {
+            float: left;
+        }
+
+        ul.nav a {
+            display: block;
+            padding: 0px 28px;
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 7px;
+        }
+
+        .nbox {
+            width: 80%;
+            height: 56px;
+            margin: auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.navbar {
+            margin: auto;
+            margin-left: 70px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul.navbar li {
+            float: left;
+        }
+
+        .la {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(11, 18, 25, .75);
+            margin-bottom: -27px;
+            list-style: none;
+            padding: 8px;
+            margin-right: 8px;
+            margin-top: -3px;
+        }
+
+        .nav {
+            width: 70%;
+            height: 100px;
+            border: 1px solid transparent;
+
+        }
+
+        .dbox {
+            width: 96px;
+            height: 41px;
+            display: inline-block;
+            vertical-align: bottom;
+            font-family: LatoSemiBold;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .med {
+            font-family: LatoSemiBold;
+            font-size: 16px;
+            color: white;
+        }
+
+        .pmed {
+            vertical-align: bottom;
+            display: inline-block;
+            color: white;
+            font-family: LatoSemiBold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 220px;
+            font-size: 12px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainbox">
+
+        <a href="homepage.html">
+            <div class="mainImg">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+            </div>
+        </a>
+
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+
+
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+
+            </div>
+
+            <div class="b1">
+                <span id="numprod"></span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="cart.html"> Cart
+
+            </div>
+
+
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href="signin.html"> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="secondbigbox">
+        <div class="row">
+
+            <div>
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <a href="med.html">
+                            <div class="med">Medicines</div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">All Medicines</a>
+                            <a href="#">Previously ordered products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
+                <a href="category.html">
+                    <p class="pmed">Wellness</p>
+                </a>
+            </div>
+
+            <div>
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
+                <a href="lab.html">
+                    <p class="pmed">Lab Tests</p>
+                </a>
+            </div>
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <a href="category.html">
+                            <div class="med">Beauty</div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="">Body Care</a>
+                            <a href="#">Face Care</a>
+                            <a href="#">Fragrance</a>
+                            <a href="#">Hands and Feet</a>
+                            <a href="#">Home Care</a>
+                            <a href="#">Senior Care</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/health-library.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Health Corner</div>
+                        <div class="dropdown-content">
+                            <a href="#">Health Library</a>
+                            <a href="#">PatientsAlike</a>
+                            <a href="#">Corona Awarness</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="nbox">
+        <ul class="navbar">
+            <li class="la"><a href="product.html">COVID Essentials</a></li>
+            <li class="la"><a href="product.html">Diabetes</a></li>
+            <li class="la"> <a href="product.html">Eyewear</a></li>
+            <li class="la"><a href="product.html">Ayush</a></li>
+            <li class="la"><a href="product.html">Fitness</a></li>
+            <li class="la"><a href="product.html">Mom &amp; Baby</a></li>
+            <li class="la"><a href="product.html">Devices</a></li>
+            <li class="la"><a href="product.html">Surgicals</a></li>
+            <li class="la"><a href="product.html">Sexual Wellness</a></li>
+            <li class="la"><a href="product.html">Treatments</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <div id="spotlight">
+        <h2>In the Spotlight</h2>
+        <img src="https://www.netmeds.com/images/cms/section/images/1654754156_Skincare_1680x320.jpg">
+    </div>
+    <div class="brand">
+        <h2>Featured Brands</h2>
+        <div id="Features_brand">
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg"></a>
+                <p>Maybelline</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg"></a>
+                <p>Garnier</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg"></a>
+                <p>Myglamm</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg"></a>
+                <p>Colorbar</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg"></a>
+                <p>Plum</p>
+            </div>
+        </div>
+    </div>
+    <div class="offers">
+        <h2>Top Offers On Brands</h2>
+        <div id="many_offers">
+            <div class="carousel" data-flickity='{ "groupCells": 2,"autoPlay": 2000 , "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <img style="margin-right: 50px; margin-left: 0px;height:195px;width: 400px;"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654693004_Lotus-436x224.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin-right: 50px;height:195px;width: 400px"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654693224_436-X-224-Assorted-Banner.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin-right: 50px;height:195px;width: 400px"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654692798_Bestseller_Summer_436x224.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin-right: 50px;height:195px;width: 400px"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654692798_Bestseller_Summer_436x224.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin-right: 50px;height:195px;width: 400px"
+                        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654693078_Soulflower-436_X_224.jpg">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Category">
+        <h2>Shop by Category</h2>
+        <div id="shop_category">
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/3495/thumb/face_wash_cleansers_3.jpg"></a>
+                <p>Face_Wash_Cleansers</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg"></a>
+                <p>Body Care</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3476/thumb/nail_care_2.jpg"></a>
+                <p>Nail Care</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/product-v1/150x150/13110/himalaya_revitalizing_night_cream_50_gm_0_2.jpg"></a>
+                <p>Skin Care</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg"></a>
+                <p>Hair Care</p>
+            </div>
+        </div>
+    </div>
+    <div class="essential">
+        <div>
+            <h2>Skin care Essentials</h2>
+            <p>View All> </p>
+        </div>
+
+        <div id="skin_care_essential">
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/3495/thumb/face_wash_cleansers_3.jpg"></a>
+                <p>Face_Wash_Cleansers</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/3505/thumb/facial_kits_1.jpg"></a>
+                <p>facial Kits</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3903/thumb/face_skin_care_2.jpg"></a>
+                <p>Face SkinCare</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/product-v1/150x150/954843/blue_heaven_bling_nailpaint_718_pink_streak_8_ml_0_0.jpg"></a>
+                <p>Make-Up</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3499/thumb/day_cream_2.jpg"></a>
+                <p>Day Cream</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="hair">
+        <div>
+            <h2>Hair care Essentials</h2>
+            <p>View All ></p>
+        </div>
+        <div id="hair_care">
+            <div>
+                <a href="product.html"><img src="https://www.netmeds.com/images/category/551/thumb/hair_oils_2.jpg"></a>
+                <p>Hair Oils</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/553/thumb/hair_treatment_3.jpg"></a>
+                <p>Hair Treatment</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_2.jpg"></a>
+                <p>Hair Gels & Waxen</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3705/thumb/hair_perms_texturizers_1.jpg"></a>
+                <p>Hair Perms Texturizers</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3706/thumb/hair_sprays_mists_0.jpg"></a>
+                <p>Hair Sprays & Mists</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mens">
+        <div>
+            <h2>Men’s Grooming</h2>
+            <p>View All ></p>
+        </div>
+        <div id="mens_grooming">
+            <div>
+                <a href="product.html"><img src="https://www.netmeds.com/images/category/v1/3420/thumb/shaving.jpg"></a>
+                <p>Shaving</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_2.jpg"></a>
+                <p>Razors Cartridges</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_2.jpg"></a>
+                <p>Beard Oil</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_2.jpg"></a>
+                <p>Beard Wash</p>
+            </div>
+            <div>
+                <a href="product.html"><img
+                        src="https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_2.jpg"></a>
+                <p>Hair Gels Waxes</p>
+            </div>
+        </div>
+    </div>
+    <div class="beauty">
+
+        <div id="beauty_pink">
+            <h2>The Latest In Beauty</h2>
+            <p>View All ></p>
+        </div>
+        <div class="latest_beauty_cover">
+            <div id="latest_beauty">
+                <div>
+                    <img
+                        src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655103844_White-Turmeric_480x180.jpg">
+                    <p>White turmeric:5 Incrediable health Reason To Add</p>
+                </div>
+                <div>
+                    <img
+                        src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655104016_Karkatshringi_480x180.jpg">
+                    <p>Karkatshringi: health Benifits,Uses,Dosage,Effe.. </p>
+                </div>
+                <div>
+                    <img
+                        src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655101352_Vaginal-Agenesis_480x180.jpg">
+                    <p>Varginal Agenesis: Cause,Symptoms And Treatment</p>
+                </div>
+                <div>
+                    <img
+                        src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/World_BloodDonor_Day_Featuredimage_480x180.jpg">
+                    <p>World WorldBloodDonor Day:5 Common Myths Debunked..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border">
+
+    </div>
+
+    <div class="footer">
+        <div id="logo">
+            <div>
+                <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg">
+            </div>
+            <div>
+                <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most
+                    trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+            </div>
+
+
+        </div>
+        <hr>
+        <div id="four_footer">
+            <div>
+                <p>COMPANY</p>
+                <p>About Netmeds</p>
+                <p>Customers Speak</p>
+                <p>In the News</p>
+                <p>Career</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Fees and Payments Policy</p>
+                <p>Shipping and Delivery Policy</p>
+                <p>Return, Refund and Cancellation Policy</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <p>SHOPPING</p>
+                <p>Browse by A-Z</p>
+                <p>Browse by Manufacturers</p>
+                <p>Health Articles</p>
+                <p>Offers / Coupons</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <p>SOCIAL</p>
+                <p>Patients Alike</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+                <p>Youtube</p>
+                <p>Refer & Earn</p>
+
+            </div>
+            <div>
+                <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+                <div class="control">
+                    <input type="text" id="text" placeholder="Enter your email addresh">
+                    <button id="btn">➡️</button>
+                    <hr>
+                    <div id="gbtn">
+                        <div>
+                            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png">
+                        </div>
+                        <div>
+                            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="Lfooter">
+            <div>
+                <p>Medicine</p>
+            </div>
+            <div>
+                <p>Wellness</p>
+            </div>
+            <div>
+                <p>Lab Test</p>
+            </div>
+            <div>
+                <p>Beauty</p>
+            </div>
+            <div>
+                <p>Copyright© 2022. All Rights Reserved</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+<script>
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
+
+
+
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
+
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
+
+    txt.appendChild(spantext)
+</script>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

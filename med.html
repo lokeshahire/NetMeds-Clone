@@ -89,19 +89,6 @@
             margin-bottom: 25px;
         }
 
-        /* @media screen and (min-width: 0px) and (max-width: 320px) {
-            #Allmedicine {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-
-        @media screen and (min-width: 321px) and (max-width: 720px) {
-            #Allmedicine {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        } */
-
-
 
 
         * {
@@ -567,15 +554,20 @@
             border-top: 1px solid #d3d5d7;
             padding-top: 20px;
         }
+
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body style="background-color:#f5f3f4;">
     <div id="mainbox">
-
-        <div class="mainImg">
-            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
-        </div>
+        <a href="homepage.html">
+            <div class="mainImg">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+            </div>
+        </a>
 
         <div id="searchBox">
             <select id="sel">
@@ -595,16 +587,16 @@
             </div>
 
             <div class="b1">
-                <span id="numprod">2</span>
+                <span id="numprod"></span>
                 <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
-                <a href="l"> Cart
+                <a href="cart.html"> Cart
 
             </div>
 
 
             <div class="b1">
                 <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-                <a href=""> SignIn/SignUp
+                <a href="signin.html"> SignIn/SignUp
                 </a>
             </div>
         </div>
@@ -632,13 +624,14 @@
 
             <div style="width: 500px;">
 
-                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
+                <a href="category.html"><img id="rimg"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"></a>
                 <p style="margin-top: -33px; margin-left: 60px;" class="pmed">Wellness</p>
             </div>
 
             <div>
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
-                <a href="labtest.html">
+                <a href="lab.html">
                     <p style="margin-top: -33px; margin-left: 60px;" class="pmed">Lab Tests</p>
                 </a>
             </div>
@@ -647,9 +640,11 @@
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <div class="medHealth">Beauty</div>
+                        <a href="category.html">
+                            <div class="medHealth">Beauty</div>
+                        </a>
                         <div class="dropdown-content">
-                            <a href="bodycare.html">Body Care</a>
+                            <a href="">Body Care</a>
                             <a href="#">Face Care</a>
                             <a href="#">Fragrance</a>
                             <a href="#">Hands and Feet</a>
@@ -681,16 +676,16 @@
 
     <div class="nbox">
         <ul class="navbar">
-            <li class="la"><a href="#">COVID Essentials</a></li>
-            <li class="la"><a href="#">Diabetes</a></li>
-            <li class="la"> <a href="#">Eyewear</a></li>
-            <li class="la"><a href="#">Ayush</a></li>
-            <li class="la"><a href="#">Fitness</a></li>
-            <li class="la"><a href="#">Mom &amp; Baby</a></li>
-            <li class="la"><a href="#">Devices</a></li>
-            <li class="la"><a href="#">Surgicals</a></li>
-            <li class="la"><a href="#">Sexual Wellness</a></li>
-            <li class="la"><a href="#">Treatments</a></li>
+            <li class="la"><a href="product.html">COVID Essentials</a></li>
+            <li class="la"><a href="product.html">Diabetes</a></li>
+            <li class="la"> <a href="product.html">Eyewear</a></li>
+            <li class="la"><a href="product.html">Ayush</a></li>
+            <li class="la"><a href="product.html">Fitness</a></li>
+            <li class="la"><a href="product.html">Mom &amp; Baby</a></li>
+            <li class="la"><a href="product.html">Devices</a></li>
+            <li class="la"><a href="product.html">Surgicals</a></li>
+            <li class="la"><a href="product.html">Sexual Wellness</a></li>
+            <li class="la"><a href="product.html">Treatments</a></li>
         </ul>
 
     </div>
@@ -967,26 +962,18 @@
 </html>
 <script>
 
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
 
-    function myFunction() {
 
-        // var input, filter, ul, li, a, i, txtValue;
-        var name = document.getElementsByTagName("td");
-        var filterr = name.value;
-        var submedicine = document.getElementById("submedicine");
-        // var p = submedicine.getElementsByTagName("p");
-        console.log(submedicine)
 
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < name.length; i++) {
-            var a = name[i].getElementsByTagName("p")[0];
-            var txtValue = a.innerText;
-            if (txtValue.indexOf(filterr) > -1) {
-                name[i].style.display = "";
-            } else {
-                name[i].style.display = "none";
-            }
-        }
-    }
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
+
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
+
+    txt.appendChild(spantext)
+
 
 </script>
