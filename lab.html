@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+    <title>Netmed.com: India Online Pharmacy</title>
+</head>
+<style>
+    #searchBox {
+        font-family: LatoSemiBold;
+        width: 42%;
+        height: 50px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px;
+        margin: 18px;
+        background: white;
+        margin-left: -1%;
+    }
+
+    .val {
+        width: 50%;
+        height: 20px;
+    }
+
+    #sel {
+        width: 25%;
+        height: 35px;
+        vertical-align: middle;
+        margin: 8px;
+        border: none;
+        display: inline-block;
+        color: #24aeb1;
+        font-family: LatoSemiBold;
+
+    }
+
+    #mainbox {
+        width: 100%;
+        height: 100px;
+        background-color: #32aeb1;
+        font-family: LatoSemiBold;
+        position: fixed;
+        margin-top: -100px;
+        margin-left: -1%
+    }
+
+    .mainImg {
+        width: 12%;
+        margin: 15px;
+        vertical-align: middle;
+        height: 50px;
+        background-color: #32aeb1;
+        display: inline-block;
+        font-family: LatoSemiBold;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: #32aeb1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+
+    #boxes {
+        width: 31%;
+        height: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-weight: 500;
+        margin-top: -25px;
+    }
+
+
+    .b1 {
+        width: 25%;
+        height: 9px;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        font-weight: 500
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .icon {
+        margin: -5px;
+    }
+
+    #numprod {
+        display: block;
+        background: #ee4380 !important;
+        color: #fff !important;
+        border-radius: 6.5px;
+        padding: 0px;
+        margin-bottom: -1%;
+        width: 12%;
+        text-align: center;
+        line-height: 14px;
+        font-family: LatoBold;
+        font-size: 10px;
+        margin-left: 10%;
+    }
+
+    .b1 a {
+        text-decoration: none;
+        color: white
+    }
+
+    #searchbar {
+        width: 70%;
+        height: 40px;
+        border: transparent;
+    }
+
+    #secondbigbox {
+        background: #32aeb1;
+        width: auto;
+        margin-left: -1%;
+    }
+
+    .row {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px
+    }
+
+    .row>div {
+        height: 50px;
+        flex-basis: 180px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #rimg {
+        padding: 6px;
+        display: inline-block;
+    }
+
+    ul.nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 36px;
+        line-height: 26px;
+        font-size: 13px;
+        color: black;
+    }
+
+    ul.nav li {
+        float: left;
+    }
+
+    ul.nav a {
+        display: block;
+        padding: 0px 28px;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 7px;
+    }
+
+    .nbox {
+        width: 80%;
+        height: 56px;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.navbar {
+        margin: auto;
+        margin-left: 130px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    ul.navbar li {
+        float: left;
+    }
+
+    .la {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(11, 18, 25, .75);
+        margin-bottom: -27px;
+        list-style: none;
+        padding: 11px;
+        margin-right: 8px;
+        margin-top: -3px;
+    }
+
+    .nav {
+        width: 70%;
+        height: 100px;
+        border: 1px solid yellow;
+
+    }
+
+    .dbox {
+        width: 96px;
+        height: 41px;
+        display: inline-block;
+        vertical-align: bottom;
+        font-family: LatoSemiBold;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .med {
+        font-family: LatoSemiBold;
+        font-size: 16px;
+        color: white;
+    }
+
+    .pmed {
+        vertical-align: bottom;
+        display: inline-block;
+        color: white;
+        font-family: LatoSemiBold;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 220px;
+        font-size: 12px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .footer-logo {
+        padding: 19px;
+        display: inline-block;
+    }
+
+    .footer-txt {
+        display: inline-block;
+        padding: 5px;
+        width: 60%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgba(11, 18, 25, .5);
+        align-items: center;
+        height: 80px;
+        border-bottom: 1px solid rgb(191, 187, 187);
+    }
+
+    .footer-top {
+        width: 300px;
+        height: 110px;
+        display: inline-block;
+        margin-left: 150px;
+        border-bottom: 1px solid rgb(191, 187, 187);
+
+    }
+
+    .company {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .list {
+
+        width: 200px;
+        height: 550px;
+        margin-left: 180px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-top: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+
+    .head2 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+        text-transform: uppercase;
+        margin-left: -2px;
+    }
+
+    ul li a {
+        line-height: 32px;
+        font-size: 14px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .listt {
+        width: 270px;
+        height: 550px;
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: bottom;
+        max-height: 541px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .subscribe h1 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 11px;
+        /* text-transform: uppercase; */
+        margin: 2px;
+    }
+
+    .inp {
+        width: 194px;
+        height: 40px;
+        border-radius: 4px;
+        border: 0;
+        padding: 0 12px;
+    }
+
+    input {
+        overflow: visible;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .subtext {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .foot {
+        width: 100px;
+        vertical-align: middle;
+        border-style: none;
+        max-width: 100%;
+        margin: 9px;
+    }
+
+    .fonttext {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+        color: rgba(11, 18, 25, .75);
+        margin-left: 24px;
+    }
+
+    p.pp {
+        margin: 2px;
+        padding: 20px;
+        line-height: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+        color: rgba(11, 18, 25, .75);
+    }
+
+    .explore {
+        display: block;
+        padding: 12px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 32px;
+        width: 140px;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #24aeb1;
+        border-radius: 4px;
+        box-shadow: 0 6px 12px 0 rgb(36 174 177 / 40%);
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 32px;
+        text-decoration: none;
+        margin: 23px;
+    }
+
+    .flimg {
+        width: 50%;
+        /* vertical-align: middle; */
+        padding: 31px;
+    }
+
+    .copyright {
+        background: #fff;
+        color: rgba(11, 18, 25, .5);
+        display: inline-block;
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+        height: 65px;
+        padding: 0 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+    .copyblock a {
+        color: rgba(11, 18, 25, .5);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .copyblock {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid #d3d5d7;
+        padding-top: 20px;
+    }
+
+
+    /* body style */
+    .overall {
+        /* border: 1px solid rgb(30, 0, 255); */
+        width: 97%;
+        height: 550px;
+        margin-left: -0.5%;
+        padding: 30px;
+        background-color: #E0F8FF;
+    }
+
+    .ImgForm {
+        /* border: 1px solid red; */
+        width: 95%;
+        height: 500px;
+        display: flex;
+
+
+    }
+
+
+    .Inputform {
+        /* border: 1px solid rgb(0, 255, 0); */
+        width: 25%;
+        height: 98%;
+        margin-left: 2%;
+        padding: 30px;
+        padding-top: 10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .upperLogo {
+        display: flex;
+    }
+
+    .logoPath {
+        display: flex;
+        border: 1px solid rgb(200, 200, 200);
+        width: 200px;
+        height: 45px;
+    }
+
+    .logoRadio {
+        display: flex;
+        border: 1px solid rgb(200, 200, 200);
+        margin-left: 15px;
+        width: 200px;
+        height: 45px;
+
+    }
+
+    .logoRadio>img {
+        margin-top: 12px;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    .logoPath>img {
+        margin-top: 12px;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    .formbtn {
+        background-color: #24aeb1;
+        border: transparent;
+        width: 95%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+
+    .populartest {
+        /* border: 1px solid rgb(255, 21, 0); */
+        width: 95%;
+        height: 400px;
+        margin: auto;
+
+    }
+
+    .secondTitle {
+        color: #909697;
+    }
+
+    .TestImg {
+        display: grid;
+        grid-template-columns: repeat(5, 18.5%);
+        gap: 20px;
+        margin-left: 2%;
+        margin-top: 40px;
+    }
+
+    .test {
+        /* border: 1px solid teal; */
+        height: 100px;
+        display: flex;
+    }
+
+    .topBox {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        gap: 70px;
+        margin-left: 4%;
+        margin-top: 40px;
+    }
+
+    .innerBox {
+        height: 450px;
+        width: auto;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    p+h3 {
+        color: #ee4380;
+        font-size: 25px;
+    }
+
+    /* 
+    .TopHead {
+        border: 1px solid rgb(15, 37, 228);
+
+    } */
+
+    h3+div {
+        width: 250px;
+        height: 200px;
+    }
+
+    .csHead {
+        padding: 30px;
+    }
+
+    .csAllImg {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        gap: 100px;
+        margin-left: 10%;
+        margin-top: 40px;
+
+
+    }
+
+    .csImg {
+        /* border: 1px solid red; */
+        width: 105%;
+        height: 250px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .csDec {
+        color: #36393a;
+    }
+
+    h2+p {
+        color: #09C0D3;
+    }
+
+    .labBox {
+        /* border: 1px solid rgb(18, 51, 129); */
+        width: 96%;
+        height: 280px;
+        padding: 30px;
+    }
+
+    .labInnerBox {
+        display: grid;
+        grid-template-columns: repeat(5, 15%);
+        gap: 10px;
+        margin-left: 20%;
+        margin-top: 40px;
+
+    }
+
+    .labInnerBox2 {
+        display: grid;
+        grid-template-columns: repeat(2, 15%);
+        gap: 50px;
+        margin-left: 40%;
+        margin-top: 40px;
+
+    }
+
+    .logoImg>img {
+        width: 65%;
+        height: 60px;
+    }
+
+    .upperWhatsApp {
+        width: 100.5%;
+        height: 100px;
+        background-color: #d4e4e4;
+        display: flex;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 30px;
+        margin-left: -0.5%;
+
+    }
+
+    #btnBook {
+        width: 150%;
+        height: 70px;
+        border-radius: 10px;
+        background-color: #24AEB1;
+        color: white;
+        font-size: 25px;
+        margin-left: 50px;
+        border: transparent;
+    }
+
+    .WhatsAppNo {
+        margin-left: 30%;
+        display: flex;
+    }
+
+    .WhatsAppButton {
+        /* margin: auto; */
+        margin-left: 20px
+    }
+
+    .bottomWhatsApp {
+        background-color: #24AEB1;
+        text-align: center;
+        padding-top: 20px;
+        width: 100.5%;
+        height: 80px;
+        color: white;
+        margin-left: -0.5%;
+
+    }
+</style>
+
+
+<body>
+    <!-- navbar start -->
+    <div id="mainbox">
+
+        <div class="mainImg">
+            <a href="homepage.html"><img
+                    src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"></a>
+
+        </div>
+
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+
+
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+
+            </div>
+
+            <div class="b1">
+                <span id="numprod">2</span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="l"> Cart
+
+            </div>
+
+
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href=""> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="secondbigbox">
+        <div class="row">
+
+            <div>
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Medicines</div>
+                        <div class="dropdown-content">
+                            <a href="#">All Medicines</a>
+                            <a href="#">Previously ordered products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
+                <p class="pmed">Wellness</p>
+            </div>
+
+            <div>
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
+                <a href="labtest.html">
+                    <p class="pmed">Lab Tests</p>
+                </a>
+            </div>
+            <div>
+
+                <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Beauty</div>
+                        <div class="dropdown-content">
+                            <a href="bodycare.html">Body Care</a>
+                            <a href="#">Face Care</a>
+                            <a href="#">Fragrance</a>
+                            <a href="#">Hands and Feet</a>
+                            <a href="#">Home Care</a>
+                            <a href="#">Senior Care</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <img id="rimg"
+                    src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/health-library.svg">
+                <div class="dbox">
+                    <div class="dropdown">
+                        <div class="med">Health Corner</div>
+                        <div class="dropdown-content">
+                            <a href="#">Health Library</a>
+                            <a href="#">PatientsAlike</a>
+                            <a href="#">Corona Awarness</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="nbox">
+        <ul class="navbar">
+            <li class="la"><a href="#">COVID Essentials</a></li>
+            <li class="la"><a href="#">Diabetes</a></li>
+            <li class="la"> <a href="#">Eyewear</a></li>
+            <li class="la"><a href="#">Ayush</a></li>
+            <li class="la"><a href="#">Fitness</a></li>
+            <li class="la"><a href="#">Mom &amp; Baby</a></li>
+            <li class="la"><a href="#">Devices</a></li>
+            <li class="la"><a href="#">Surgicals</a></li>
+            <li class="la"><a href="#">Sexual Wellness</a></li>
+            <li class="la"><a href="#">Treatments</a></li>
+        </ul>
+
+    </div>
+
+    <!-- navbar End -->
+
+
+    <!-- body start -->
+    <!-- imgForm -->
+    <div class="overall">
+        <div class="ImgForm">
+            <div class="img">
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1635266868_WhatsApp_Image_2021-10-26_at_21.56.07.jpg"
+                    alt="">
+            </div>
+            <div class="Inputform">
+                <div class="upperLogo">
+                    <div class="logoPath">
+                        <img style="height:25px ; width:25px"
+                            src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/diagnostics/pathology.png"
+                            alt="">
+                        <p>Pathology</p>
+
+                    </div>
+                    <div class="logoRadio">
+
+                        <img style="height:25px ; width:25px"
+                            src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/diagnostics/radiology.png"
+                            alt="">
+                        <p>Radiology</p>
+                    </div>
+                </div>
+                <form action="form">
+                    <p>Please fill in your details </p>
+                    <h3 style="color: #09C0D3;">NAME</h3>
+                    <input style="border: transparent" type="text" name="" id="name">
+
+                    <h3 style="color: #09C0D3;">MOBILE NUMBER</h3>
+                    <input style="border: transparent" type="number" name="" id="number">
+
+                    <h3 style="color: #09C0D3;">PINCODE</h3>
+                    <input style="border: transparent" type="number" name="" id="pincode">
+
+                    <h3 style="color: #09C0D3;">CHOOSE PACKAGE</h3>
+                    <select style="border: transparent;color:#d3d5d7;height: 20px;" name="select" id="package">
+                        <option value="">Select</option>
+                        <option value="">Netmeds Swasthya</option>
+                        <option value="">Fever Profile</option>
+                        <option value="">Netmeds Cough-Fever Cold Package</option>
+                        <option value="">Anaemia Profile</option>
+                        <option value="">Thyroid Test</option>
+                        <option value="">Basic Allergy Package</option>
+                        <option value="">Netmeds Healthy Heart</option>
+                        <option value="">Advanced Heart Care</option>
+                    </select>
+
+                    <div style="display: flex;margin-top: 20px;" id="cond">
+                        <div><input style="border: transparent" type="checkbox" name="" id="check"></div>
+                        <div style="margin-left:10px" id="text">I agree to Netmeds Terms and Conditions</div>
+                    </div>
+                    <button class="formbtn" onclick="window.location.href='order.html'">BOOK NOW</button>
+
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="bigBox">
+        <!-- populartest -->
+        <div class="populartest">
+            <div id="title">
+                <h1 style="font-weight:500 ;">Popular Tests</h1>
+            </div>
+            <div class="secondTitle">
+                <div><br>
+                    and many more tests and packages <span><b>@ THE BEST PRICES</b></span>
+                </div>
+
+            </div>
+            <div class="TestImg">
+                <div class="test"> <img style="height:80px;width: 80px;"
+                        src="https://img.lovepik.com/free-png/20210919/lovepik-drops-of-water-png-image_400315826_wh1200.png"
+                        alt="">
+                    <p style="font-size: 25px;">Complete Hemogram</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://image.shutterstock.com/display_pic_with_logo/3217523/2030431880/stock-vector-human-liver-icon-two-color-symbol-isolated-on-a-white-background-vector-flat-hand-drawn-2030431880.jpg"
+                        alt="">
+                    <p style="font-size: 25px;">Liver Profile</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://media.glassdoor.com/sql/1094257/preferred-home-care-of-ny-squarelogo-1541695709487.png"
+                        alt="">
+                    <p style="font-size: 25px;">Diabetes</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://cdn.shopify.com/s/files/1/0563/7170/7938/products/41pW-KlxI0L_1024x1024.jpg?v=1644063655"
+                        alt="">
+                    <p style="font-size: 25px;">Lipid Profile</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://www.aquanostra.pt/wp-content/uploads/2020/07/oyster.svg" alt="">
+                    <p style="font-size: 25px;">Thyroid Profile</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://dk3d19e8hr57x.cloudfront.net/version-60/wp-content/uploads/2021/04/daigonal-logo-green-503x483.png"
+                        alt="">
+                    <p style="font-size: 25px;">Iron Deficiency</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://static.oxinis.com/consultation/image/stream/2.png" alt="">
+                    <p style="font-size: 25px;">Vitamin</p>
+                </div>
+                <div class="test"><img style="height:80px;width: 80px;"
+                        src="https://thumbs.dreamstime.com/z/male-man-symbol-gender-sexual-orientation-icon-sign-concept-male-man-symbol-gender-sexual-orientation-icon-sign-153682759.jpg"
+                        alt="">
+                    <p style="font-size: 25px;">Testosterone</p>
+                </div>
+                <div class=" test"><img style="height:80px;width: 80px;"
+                        src="https://www.freseniuskidneycare.asia/hubfs/Group%201974@3x.png" alt="">
+                    <p style="font-size: 25px;">Kidney Function Test</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- top selling -->
+        <div class="TopHead">
+            <h1 style="font-weight:500; margin-left:50px">Top Selling Packages</h1>
+            <p style="font-weight:500; margin-left:50px;color:#909697">Choose from the list of top-selling packages
+                tailored for you.
+                We care for your health!</p>
+            <div class="topBox">
+                <div class="innerBox">
+                    <h2>Netmeds Swasthya</h2>
+                    <p>Book Regular Health Check-up Package Netmeds Swasthya, a Basic Screening Preventive Health
+                        Check-up Profile including 64
+                        tests.</p>
+                    <h3>Rs.1200</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>Netmeds Shield Pack
+                    </h2>
+                    <p>Netmeds Shield Pack helps to protect against a particular danger or risk. It includes a unique
+                        diagnostic profile of 56
+                        tests for a comprehensive health evaluation.</p>
+                    <h3>Rs.900</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>Netmeds Health Pack
+                    </h2>
+                    <p>Health check-ups are very useful in the early detection of all types of illnesses and risk
+                        factors. Simple to understand
+                        and less time consuming, our Netmeds Health Pack comprises of 35 parameters of regular tests
+                        that have been specially
+                        designed keeping your health in mind.</p>
+                    <h3>Rs.499
+                    </h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>Netmeds Diabetic Checkup
+                    </h2>
+                    <p>Meant for people who want to get regular reports to prevent/check their diabetes levels. It
+                        includes 49 tests.</p>
+                    <h3>Rs.899</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>ECHO
+                    </h2>
+                    <p>Echocardiography or ECHO, is a painless test that uses sound waves to create moving pictures of
+                        your heart.</p>
+                    <h3>Rs.1600</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>ECG
+                    </h2>
+                    <p>An ECG is a simple and valuable test. Sometimes it can definitely diagnose a heart problem. The
+                        electrocardiogram
+                        (ECG)...</p>
+                    <h3>Rs.250</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>PET Scan
+                    </h2>
+                    <p>PET scan may detect the early onset of disease before other imaging tests can.</p>
+                    <h3>Rs.9600</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <h2>Ultrasound Whole Abdomen
+                    </h2>
+                    <p>Ultrasound is used to study the development of an unborn baby, abdominal and pelvic organs and
+                        blood vessels.</p>
+                    <h3>Rs.999</h3>
+                    <div style="display:flex;">
+
+                        <img src="https://www.jupiterhospital.com/healthcheck/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/premium_health_check_package.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- custom speak -->
+        <div class="csHead">
+            <div>
+                <h2>Customer Speak</h2>
+            </div>
+            <div style="color:grey ">
+                Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our
+                service.</div>
+        </div>
+        <div class="csAllImg">
+            <div class="csImg">
+                <div class="csName">
+                    <div>
+                        <h2>Ram Kumar</h2>
+                        <p>Mumbai</p>
+                        <p style="color:#24aeb1">----------------------------------</p>
+                    </div>
+
+                </div>
+                <div class="csDec"> This is the best lab test experience ever! And
+                    that too at a very reasonable rate! I highly recommend Netmeds Swasthya package. Value for money!
+                </div>
+            </div>
+            <div class="csImg">
+                <div class="csName">
+                    <div>
+                        <h2>Ranjit Singh</h2>
+                        <p>New-delhi</p>
+                        <p style="color:#24aeb1">----------------------------------</p>
+                    </div>
+
+                </div>
+                <div class="csDec">
+                    If you want a full body health report that won't cost a bomb but
+                    give accurate results, try Netmeds Swasthya Plus! Thyrocare Labs and Netmeds have done a great job
+                    on this one!
+                </div>
+            </div>
+            <div class="csImg">
+                <div class="csName">
+                    <div>
+                        <h2>Vena Nair</h2>
+                        <p>Chennai</p>
+                        <p style="color:#24aeb1">----------------------------------</p>
+                    </div>
+
+                </div>
+                <div class="csDec">
+                    I've done lab tests before. The process seemed so off-putting. But
+                    with Netmeds it has been so easy and professional! The phlebotomist took great care when drawing the
+                    blood etc. He was very reassuring!
+                </div>
+
+            </div>
+        </div>
+
+        <!-- lab partner -->
+        <div class="labBox">
+            <div class="labHead">
+                <h1>Lab Partner</h1>
+                <p style="color: grey;">We provide lab tests and health packages from well-reputed, certified diagnostic
+                    labs across the
+                    country.</p>
+            </div>
+            <div class="labInnerBox">
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Apllo_clinic.jpg"
+                        alt="appolo">
+                </div>
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/SRL_Diagnostics.jpg"
+                        alt="srl">
+                </div>
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Healthians.jpg"
+                        alt="Healthians">
+                </div>
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2021/thyrocare_logo.jpg"
+                        alt="thyrocare_logo">
+                </div>
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Niramaya.jpg"
+                        alt="Niramaya">
+                </div>
+            </div>
+            <hr>
+            <div class="labInnerBox2">
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Neuberg.jpg"
+                        alt="Neuberg">
+                </div>
+                <div class="logoImg">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/radiology/Mahajan-Imaging.jpg"
+                        alt="Mahajan-Imaging">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- whatsbook button -->
+        <div class="upperWhatsApp">
+            <div class="WhatsAppNo">
+                <img style="height: 80px;width: 80px;"
+                    src="https://www.netmeds.com/images/cms/wysiwyg/health-packages/home/wsp.png" alt="">
+                <div>
+                    <p style="font-size: 25px; margin-top: 2px;">Whats app</p> <br>
+                    <p style="font-size: 27px; margin-top: -30px; margin-left: 10px;">7042421211</p>
+                </div>
+            </div>
+            <div class="WhatsAppButton">
+                <button id="btnBook">BOOK NOW</button>
+            </div>
+        </div>
+        <div class="bottomWhatsApp">
+            Ultrasound |Xray |MRI |CT Scan|PET Scan <br>
+            Certified Labs| Best Price | Assured Quality|
+
+        </div>
+    </div>
+    <!-- body End -->
+
+
+    <!-- footer -->
+    <div class="footer-top">
+        <div class="footer-logo">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg">
+        </div>
+    </div>
+
+    <div class="footer-txt"> Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha &amp; Company – one of
+        India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines. </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="list">
+        <ul type="none">
+            <h1 class="head2">Company</h1>
+            <li><a href="https://www.netmeds.com/about-us">About Netmeds</a></li>
+            <li><a href="https://www.netmeds.com/testimonial">Customers Speak</a></li>
+            <li><a href="https://www.netmeds.com/news">In the News</a></li>
+            <li id="netmeds_career"><a href="https://netmeds.darwinbox.in/ms/candidate/careers">Career</a></li>
+            <li><a href="https://www.netmeds.com/terms-and-conditions">Terms and Conditions</a></li>
+            <li><a href="https://www.netmeds.com/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://www.netmeds.com/fees-and-payments-policy">Fees and Payments Policy</a></li>
+            <li><a href="https://www.netmeds.com/shipping-and-delivery-policy">Shipping and Delivery Policy</a></li>
+            <li><a href="https://www.netmeds.com/return-refund-and-cancellation-policy">Return, Refund and Cancellation
+                    Policy</a></li>
+            <li><a class="contact-link" href="https://www.netmeds.com/contact-us">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="list">
+        <ul type="none">
+            <h1 class="head2">Shopping</h1>
+
+            <li><a href="https://www.netmeds.com/prescriptions">Browse by A-Z</a></li>
+            <li><a href="https://www.netmeds.com/medicine/manufacturers">Browse by Manufacturers</a></li>
+            <li><a href="https://www.netmeds.com/health-library">Health Articles</a></li>
+            <li class="sbilabhide"><a href="https://www.netmeds.com/offers">Offers / Coupons</a></li>
+            <li><a href="https://www.netmeds.com/faqs">FAQs</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="list">
+        <ul type="none">
+
+            <h1 class="head2">Social</h1>
+            <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
+            <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
+            <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
+            <li><a href="https://in.linkedin.com/company/netmeds-marketplace-limited">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">Youtube</a></li>
+            <li><a href="https://www.netmeds.com/refer-earn">Refer &amp; Earn</a></li>
+        </ul>
+    </div>
+
+    <div class="listt">
+        <div class="subscribe">
+            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <p class="subtext">Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+            </p>
+        </div>
+        <input class="inp" name="newsletter_email" type="email" maxlength="50"
+            class="Required-newsletter-email validate-newsletter-emailid" id="newsletter_email"
+            placeholder="Enter your email address">
+
+        <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en"
+            target="_blank"><img style="height:35px ; width:120px" class="foot"
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png"></a>
+
+        <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="_blank"><img
+                style="height:35px ; width:105px;" class="foot"
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png"></a>
+
+    </div>
+
+
+    <small class="copyright">
+        <div class="copyblock">
+            <div class="footer_link">
+                <a href="">Medicine</a>
+            </div>
+            <div class="footer_link">
+                <a href="">Wellness</a>
+            </div>
+            <div class="footer_link sbilabhide">
+                <a href="">Lab Tests</a>
+            </div>
+            <div class="footer_link"><a href="">Beauty</a></div>
+            <div class="copy-txt">Copyright© 2021. All Rights Reserved.
+
+            </div>
+        </div>
+    </small>
+
+
+</body>
+
+
+</html>
+
+<!-- <script>
+    var popular_Sell = [
+        { name: "Netmeds Swasthya", para: "Book Regular Health Check-up Package Netmeds Swasthya, a Basic Screening Preventive Health Check-up Profile including 64 tests.", del: "Rs.3200", price: "Rs.1200", },
+        { name: "Netmeds Shield Pack", para: "Netmeds Shield Pack helps to protect against a particular danger or risk. It includes a unique diagnostic profile of 56 tests for a comprehensive health evaluation.", del: "Rs.3000", price: "Rs.900", },
+        { name: "Netmeds Health Pack", para: "Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Netmeds Health Pack comprises of 35 parameters of regular tests that have been specially designed keeping your health in mind.", del: "Rs.1699", price: "Rs.499", },
+        { name: "Netmeds Diabetic Checkup", para: "Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.", del: "Rs.3450", price: " Rs.899", },
+        { name: "ECHO", para: "Echocardiography or ECHO, is a painless test that uses sound waves to create moving pictures of your heart.", del: "Rs 3000 ", price: "Rs.1600", },
+        { name: "ECG", para: "An ECG is a simple and valuable test. Sometimes it can definitely diagnose a heart problem. The electrocardiogram (ECG)...", del: "Rs 300", price: "Rs.250", },
+        { name: "PET Scan", para: "PET scan may detect the early onset of disease before other imaging tests can.", del: "Rs 1200", price: "Rs.9600", },
+        { name: "Ultrasound Whole Abdomen", para: "Ultrasound is used to study the development of an unborn baby, abdominal and pelvic organs and blood vessels.", del: "Rs 1299", price: "Rs.999", }
+
+
+
+    ]
+    popular_Sell.map(function (elem) {
+        var Name = document.createElement("h3");
+        Name.textContent = elem.name;
+        var div1 = document.createElement("div");
+        div1.append(Name);
+        var paragraph = document.createElement("p");
+        paragraph.textContent = elem.para;
+        var div2 = document.createElement("div");
+        div2.setAttribute("class", "toppara")
+        div2.append(paragraph);
+        var del_price = document.createElement("p");
+        del_price.setAttribute("class", "delprice")
+        del_price.textContent = elem.del;
+        var price = document.createElement("h2");
+        price.setAttribute("class", "pricesell")
+        price.textContent = elem.price;
+        var div3 = document.createElement("div");
+        div3.setAttribute("class", "topprice");
+        div3.append(del_price, price);
+        var btn = document.createElement("span");
+        btn.textContent = "BOOK NOW";
+        var div5 = document.createElement("div");
+        div5.setAttribute("class", "btn");
+        div5.append(btn);
+        var box = document.createElement("div");
+        // box.setAttribute("class", "box_top_Sell");
+        topBox.append(div1, div2, div3, div5);
+        // document.getElementById("top_sell_boxes").append(box);
+
+
+    });
+</script> -->
