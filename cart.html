@@ -28,7 +28,7 @@
         }
         #products > div{
             margin-top: 2px;
-            box-shadow: 3px 3px 2px 1px rgb(216, 210, 210);
+            box-shadow: 3px 3px 3px 5px rgb(216, 210, 210);
             padding: 3px;
             width:80%;
             height: 350px;
@@ -234,7 +234,7 @@ background: #ee4380 !important;
 
     #payment{
         display: grid;
-       box-shadow: 3px 3px 3px 2px rgb(205, 194, 194);
+       box-shadow: 3px 3px 5px 5px rgb(205, 194, 194);
         grid-template-rows: 1fr 2fr;
         gap: 5px;
         padding: 15px;
@@ -488,8 +488,9 @@ background: #ee4380 !important;
             }
         })
         PRO.addEventListener("click",function(){
-            orderLS.push(x);
+            
             localStorage.setItem("order-page", JSON.stringify(x));
+            orderLS.push(x);
         })
 
     }
