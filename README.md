@@ -6,7 +6,7 @@ We are a team of 6 members making Project on "https://www.netmeds.com/" under Co
 
                                              " About Project "
 
-# We are building mostly 5 pages :- 
+# We are building mostly 7 pages :- 
 
 1. HomePage (Landing page)
  
